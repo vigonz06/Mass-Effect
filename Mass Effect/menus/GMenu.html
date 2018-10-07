@@ -3,6 +3,7 @@
 	<head>
 		<title>GMenu</title>
 		<meta charset = "UTF-8">
+		<script type = "text/javascript" src = "../script/function.js"></script>
 		<link rel = "stylesheet" type = "text/css" href = "../style/mystyle.css">
 	</head>
 	<body>
@@ -12,8 +13,15 @@
 				<ul><div class = "List">
 					<li>
 						<div class = "DropDown">
-							<button class = "DropButton">Mass Effect 1</button>
-							<div class = "DDContent">
+							<form method = "get" action = "../frontpages/GIntroduction.html" target = "Gmain">
+								<button class = "Button">Introducción</button>
+							</form>
+						</div>
+					</li>
+					<li>
+						<div class = "DropDown">
+							<button onclick = "GDeploy1()" class = "DropButton">Mass Effect 1</button>
+							<div id = "GDD1" class = "DDContent">
 								<a href = "../dinamic/ME1Des.html" target = "Gmain">Descripcion</a>
 								<a href = "../dynamic/ME1Vid.html" target = "Gmain">Video</a>
 							</div>
@@ -21,8 +29,8 @@
 					</li>
 					<li>
 						<div class = "DropDown">
-							<button class = "DropButton">Mass Effect 2</button>
-							<div class = "DDContent">
+							<button onclick = "GDeploy2()" class = "DropButton">Mass Effect 2</button>
+							<div id = "GDD2" class = "DDContent">
 								<a href = "../dinamic/ME2Des.html" target = "Gmain">Descripcion</a>
 								<a href = "../dynamic/ME2Vid.html" target = "Gmain">Video</a>
 							</div>
@@ -30,8 +38,8 @@
 					</li>
 					<li>
 						<div class = "DropDown">
-							<button class = "DropButton">Mass Effect 3</button>
-							<div class = "DDContent">
+							<button onclick = "GDeploy3()" class = "DropButton">Mass Effect 3</button>
+							<div id = "GDD3" class = "DDContent">
 								<a href = "../dinamic/ME3Des.html" target = "Gmain">Descripcion</a>
 								<a href = "../dynamic/ME3Vid.html" target = "Gmain">Video</a>
 							</div>
@@ -39,8 +47,8 @@
 					</li>
 					<li>
 						<div class = "DropDown">
-							<button class = "DropButton">ME:Andromeda</button>
-							<div class = "DDContent">
+							<button onclick = "GDeploy4()" class = "DropButton">ME:Andromeda</button>
+							<div id = "GDD4" class = "DDContent">
 								<a href = "../dinamic/MEADes.html" target = "Gmain">Descripcion</a>
 								<a href = "../dynamic/MEAVid.html" target = "Gmain">Video</a>
 							</div>

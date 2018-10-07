@@ -3,6 +3,7 @@
 	<head>
 		<title>SMenu</title>
 		<meta charset = "UTF-8">
+		<script type = "text/javascript" src = "../script/function.js"></script>
 		<link rel = "stylesheet" type = "text/css" href = "../style/mystyle.css">
 	</head>
 	<body>
@@ -12,8 +13,15 @@
 				<ul><div class = "List">
 					<li>
 						<div class = "DropDown">
-							<button class = "DropButton">Dentro de la Ciudadela</button>
-							<div class = "DDContent">
+							<form method = "get" action = "../frontpages/SIntroduction.html" target = "Smain">
+								<button class = "Button">Introducción</button>
+							</form>
+						</div>
+					</li>
+					<li>
+						<div class = "DropDown">
+							<button onclick = "SDeploy1(SDD1);" class = "DropButton">Dentro de la Ciudadela</button>
+							<div id = "SDD1" class = "DDContent">
 								<a href = "http://es.masseffect.wikia.com/wiki/Asari" target = "Smain">Asari</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Drell" target = "Smain">Drell</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Elcor" target = "Smain">Elcor</a>
@@ -28,15 +36,13 @@
 					</li>
 					<li>
 						<div class = "DropDown">
-							<button class = "DropButton">Fuera de la Ciudadela</button>
-							<div class = "DDContent">
+							<button onclick = "SDeploy2()" class = "DropButton">Fuera de la Ciudadela</button>
+							<div id = "SDD2" class = "DDContent">
 								<a href = "http://es.masseffect.wikia.com/wiki/Geth" target = "Smain">Geth</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Yahg" target = "Smain">Yahg</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Krogan" target = "Smain">Krogan</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Vorcha" target = "Smain">Vorcha</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Leviathan" target = "Smain">Leviathan</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Quarianos" target = "Smain">Quarianos</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Segadores" target = "Smain">Segadores</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Batarianos" target = "Smain">Batarianos</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Recolectores" target = "Smain">Recolectores</a>								
 							</div>
@@ -44,13 +50,33 @@
 					</li>
 					<li>
 						<div class = "DropDown">
-							<button class = "DropButton">Otras Especies</button>
-							<div class = "DDContent">
-								<a href = "http://es.masseffect.wikia.com/wiki/Rachni" target = "Smain">Rachni</a>
+							<button onclick = "SDeploy5()" class = "DropButton">Especies Historicas</button>
+							<div id = "SDD5" class = "DDContent">
+								<a href = "http://es.masseffect.wikia.com/wiki/Rachni" target = "Smain">Rachni</a>	
+								<a href = "http://es.masseffect.wikia.com/wiki/Proteanos" target = "Smain">Proteanos</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Segadores" target = "Smain">Segadores</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Leviathan" target = "Smain">Leviathan</a>							
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class = "DropDown">
+							<button onclick = "SDeploy4()" class = "DropButton">Galaxia de Andrómeda</button>
+							<div id = "SDD4" class = "DDContent">
+								<a href = "http://es.masseffect.wikia.com/wiki/Kett" target = "Smain">Kett</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Angaras" target = "Smain">Angaras</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Jardaan" target = "Smain">Jardaan</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Relictos" target = "Smain">Relictos</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class = "DropDown">
+							<button onclick = "SDeploy3()" class = "DropButton">Otras Especies Conocidas</button>
+							<div id = "SDD3" class = "DDContent">
 								<a href = "http://es.masseffect.wikia.com/wiki/Varren" target = "Smain">Varren</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Klixen" target = "Smain">Klixen</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Thoriana" target = "Smain">Thoriana</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Proteanos" target = "Smain">Proteanos</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Cascarones" target = "Smain">Cascarones</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Cosechador" target = "Smain">Cosechador</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Fauces_trilladoras" target = "Smain">Fauces Trilladoras</a>
