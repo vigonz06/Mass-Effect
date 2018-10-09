@@ -69,6 +69,10 @@ body
 	background-color:#0A0A2A;
 }
 
+ul
+{
+	list-style-type:none;
+}
 
 a:hover
 {
@@ -158,11 +162,6 @@ a
 	font-family:"Mass Effect Game 123";
 	text-align:justify;
 	color:#0080FF;
-}
-
-.List
-{
-	list-style-type:none;
 }
 
 .H2, .H4
