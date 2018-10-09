@@ -1,46 +1,20 @@
-function SDeploy1() 
+function Deploy(i)
 {
-	document.getElementById("SDD1").classList.toggle("show");
-}
-
-function SDeploy2() 
-{
-	document.getElementById("SDD2").classList.toggle("show");
-}
-
-function SDeploy3() 
-{
-	document.getElementById("SDD3").classList.toggle("show");
-}
-
-function SDeploy4()
-{
-	document.getElementById("SDD4").classList.toggle("show");
-}
-
-function SDeploy5()
-{
-	document.getElementById("SDD5").classList.toggle("show");
-}
-
-function GDeploy1() 
-{
-	document.getElementById("GDD1").classList.toggle("show");
-}
-
-function GDeploy2() 
-{
-	document.getElementById("GDD2").classList.toggle("show");
-}
-
-function GDeploy3() 
-{
-	document.getElementById("GDD3").classList.toggle("show");
-}
-
-function GDeploy4() 
-{
-	document.getElementById("GDD4").classList.toggle("show");
+	var j, k;
+	var id = ["SDD1", "SDD2", "SDD3", "SDD4", "SDD5", "GDD1", "GDD2", "GDD3", "GDD4"];
+	
+	document.getElementById(id[i]).classList.toggle("show");
+	
+	j = (i < 5) ? 0 : 5;
+	k = (i < 5) ? 5 : 9;
+	
+	for(; j < k; j++)
+	{
+		if(!(j == i) && document.getElementById(id[j]).classList.contains('show'))
+		{
+			document.getElementById(id[j]).classList.toggle("show");
+		}
+	}
 }
 
 window.onclick = function(event) 
@@ -48,13 +22,14 @@ window.onclick = function(event)
 	if (!event.target.matches('.DropButton')) 
 	{
 		var i;
-		var dropdowns = document.getElementsByClassName("DDContent");
+		var openDropdown;
+		var DDContent = document.getElementsByClassName("DDContent");
 
-		for (i = 0; i < dropdowns.length; i++)
+		for(i in DDContent)
 		{
-			var openDropdown = dropdowns[i];
+			openDropdown = DDContent[i];
 			
-			if (openDropdown.classList.contains('show')) 
+			if(openDropdown.classList.contains('show')) 
 			{
 				openDropdown.classList.remove('show');
 			}
