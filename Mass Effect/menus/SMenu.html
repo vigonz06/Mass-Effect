@@ -4,6 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
 		<script type = "text/javascript" src = "../script/function.js"></script>
 		<link rel = "stylesheet" type = "text/css" href = "../style/mystyle.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<div class = "M">
@@ -19,7 +20,38 @@
 					</li>
 					<li>
 						<div class = "DropDown">
-							<button onclick = "Deploy(0);" class = "DropButton">Dentro de la Ciudadela</button>
+							<button onclick = "Deploy(2);" class = "DropButton">Especies Historicas
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div id = "SDD3" class = "DDContent">
+								<a href = "http://es.masseffect.wikia.com/wiki/Rachni" target = "Smain">Rachni</a>	
+								<a href = "http://es.masseffect.wikia.com/wiki/Proteanos" target = "Smain">Proteanos</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Segadores" target = "Smain">Segadores</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Leviathan" target = "Smain">Leviathan</a>							
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class = "DropDown">
+							<button onclick = "Deploy(1);" class = "DropButton">Fuera de la Ciudadela
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div id = "SDD2" class = "DDContent">
+								<a href = "http://es.masseffect.wikia.com/wiki/Geth" target = "Smain">Geth</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Yahg" target = "Smain">Yahg</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Krogan" target = "Smain">Krogan</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Vorcha" target = "Smain">Vorcha</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Quarianos" target = "Smain">Quarianos</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Batarianos" target = "Smain">Batarianos</a>
+								<a href = "http://es.masseffect.wikia.com/wiki/Recolectores" target = "Smain">Recolectores</a>								
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class = "DropDown">
+							<button onclick = "Deploy(0);" class = "DropButton">Dentro de la Ciudadela
+								<i class="fa fa-caret-down"></i>
+							</button>
 							<div id = "SDD1" class = "DDContent">
 								<a href = "http://es.masseffect.wikia.com/wiki/Asari" target = "Smain">Asari</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Drell" target = "Smain">Drell</a>
@@ -35,32 +67,9 @@
 					</li>
 					<li>
 						<div class = "DropDown">
-							<button onclick = "Deploy(1);" class = "DropButton">Fuera de la Ciudadela</button>
-							<div id = "SDD2" class = "DDContent">
-								<a href = "http://es.masseffect.wikia.com/wiki/Geth" target = "Smain">Geth</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Yahg" target = "Smain">Yahg</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Krogan" target = "Smain">Krogan</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Vorcha" target = "Smain">Vorcha</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Quarianos" target = "Smain">Quarianos</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Batarianos" target = "Smain">Batarianos</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Recolectores" target = "Smain">Recolectores</a>								
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class = "DropDown">
-							<button onclick = "Deploy(2);" class = "DropButton">Especies Historicas</button>
-							<div id = "SDD3" class = "DDContent">
-								<a href = "http://es.masseffect.wikia.com/wiki/Rachni" target = "Smain">Rachni</a>	
-								<a href = "http://es.masseffect.wikia.com/wiki/Proteanos" target = "Smain">Proteanos</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Segadores" target = "Smain">Segadores</a>
-								<a href = "http://es.masseffect.wikia.com/wiki/Leviathan" target = "Smain">Leviathan</a>							
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class = "DropDown">
-							<button onclick = "Deploy(3);" class = "DropButton">Galaxia de Andrómeda</button>
+							<button onclick = "Deploy(3);" class = "DropButton">Galaxia de Andrómeda
+								<i class="fa fa-caret-down"></i>
+							</button>
 							<div id = "SDD4" class = "DDContent">
 								<a href = "http://es.masseffect.wikia.com/wiki/Kett" target = "Smain">Kett</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Angaras" target = "Smain">Angaras</a>
@@ -71,7 +80,9 @@
 					</li>
 					<li>
 						<div class = "DropDown">
-							<button onclick = "Deploy(4);" class = "DropButton">Otras Especies Conocidas</button>
+							<button onclick = "Deploy(4);" class = "DropButton">Otras Especies Conocidas
+								<i class="fa fa-caret-down"></i>
+							</button>
 							<div id = "SDD5" class = "DDContent">
 								<a href = "http://es.masseffect.wikia.com/wiki/Varren" target = "Smain">Varren</a>
 								<a href = "http://es.masseffect.wikia.com/wiki/Klixen" target = "Smain">Klixen</a>

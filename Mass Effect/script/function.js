@@ -12,7 +12,7 @@ function Deploy(i)
 	{
 		if(!(j == i) && document.getElementById(id[j]).classList.contains('show'))
 		{
-			document.getElementById(id[j]).classList.toggle("show");
+			document.getElementById(id[j]).classList.toggle('show');
 		}
 	}
 }
@@ -23,7 +23,7 @@ window.onclick = function(event)
 	{
 		var i;
 		var openDropdown;
-		var DDContent = document.getElementsByClassName("DDContent");
+		var DDContent = document.getElementsByClassName('DDContent');
 
 		for(i in DDContent)
 		{
