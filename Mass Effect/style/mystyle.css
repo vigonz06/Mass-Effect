@@ -1,3 +1,9 @@
+@font-face
+{
+	src:url(../fonts/me123.ttf);
+	font-family:MEFont;
+}
+
 #H
 {
 	background-image:url(../images/ME.png);
@@ -5,7 +11,7 @@
 	background-size:80% 100%;
 	margin-left:30%;
 	height:160px;
-	}
+}
 
 #Date
 {
@@ -87,8 +93,8 @@ a
 
 .DropButton, .Button
 {
-	 font-family:"Mass Effect Game 123";
 	 background-color:#0B0B61;
+	 font-family:MEFont;
 	 text-align:justify;
 	 cursor:pointer;
 	 font-size:9px;
@@ -116,8 +122,8 @@ a
 
 .DDContent a 
 {
-	font-family:"Mass Effect Game 123";
 	text-decoration:none;
+	font-family:MEFont;
 	padding:12px 16px;
 	font-size:9px;
 	display:block;
@@ -159,14 +165,14 @@ a
 
 .Content
 {
-	font-family:"Mass Effect Game 123";
+	font-family:MEFont;
 	text-align:justify;
 	color:#0080FF;
 }
 
 .H2, .H4
 {
-	font-family:"Mass Effect Game 123";
+	font-family:MEFont;
 	color:#FAFAFA;
 }
 
