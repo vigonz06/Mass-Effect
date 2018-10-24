@@ -38,34 +38,3 @@ function Display(i)
 		}
 	}
 }
-
-window.onclick = function(event)
-{
-	var downs = ["GCD0", "GCD1", "GCD2", "GCD3", "SCD0", "SCD1", "SCD2", "SCD3", "SCD4"];
-	var ups   = ["GCU0", "GCU1", "GCU2", "GCU3", "SCU0", "SCU1", "SCU2", "SCU3", "SCU4"];
-	var dropdowns = document.getElementsByClassName("DDContent");
-	var i, j, k;
-		
-	if (!event.target.matches('.DropButton'))
-	{		
-		for (i in dropdowns) 
-		{
-			var openDropdown = dropdowns[i];
-			
-			if (openDropdown.classList.contains('show')) 
-			{
-				openDropdown.classList.remove('show');
-			}
-		}
-		
-		for(j in downs)
-		{			
-			document.getElementById(downs[j]).style.display = 'inline-block';
-		}
-		
-		for(k in ups)
-		{			
-			document.getElementById(ups[k]).style.display = 'none';
-		}
-	}
-}
