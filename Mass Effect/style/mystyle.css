@@ -72,11 +72,6 @@
 	background-size:100% 100%;
 }
 
-#GCU0, #GCU1, #GCU2, #GCU3, #SCU0, #SCU1, #SCU2, #SCU3, #SCU4
-{
-	display:none;
-}
-
 body
 {
 	background-color:#0A0A2A;
@@ -176,6 +171,11 @@ iframe
 .DropDown:hover .DropButton
 {
 	background-color:#58FAF4;
+}
+
+.fa-caret-up
+{
+	display:none;
 }
 
 .show
