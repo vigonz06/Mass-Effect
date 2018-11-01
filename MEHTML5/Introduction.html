@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang = "es">
 	<head>
 		<meta charset = "UTF-8"/>
 		<script src = "script/script.js"></script>
 		<title>Introducción | Saga Mass Effect</title>
-		<link rel = "stylesheet" type = "text/css" href = "style/mystyle.css">
+		<meta name = "generator" content = "Notepad++">
 		<meta name = "description" content = "Mass Effect Saga Info Web">
+		<link rel = "stylesheet" type = "text/css" href = "style/mystyle.css">
 		<meta name = "author" content = "Victor González del Hierro del Rio"/>
 		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel = "shortcut icon" href = "https://vignette.wikia.nocookie.net/masseffect/images/6/64/Favicon.ico/revision/latest?cb=20081023071606"/>
@@ -16,36 +17,124 @@
 			<div class = "Header Date">26/10/2018</div>
 		</header>
 		<nav>
-			<a href = "Introduction.html" class = "active">Introducción</a>
+			<a href = "../introductions/Introduction.html">Introducción</a>
 			<div class = "SN">
 				<button onclick = "Display(0)" class = "SNButton">Especies
 					<i id = "SCD" class = "fa fa-caret-down"></i>
 					<i id = "SCU" class = "fa fa-caret-up"></i>
 				</button>
 				<div id = "SDD" class = "SNContent">
-					<a href = "SIntroduction.html">Introducción</a>
-					<a href = "CitadelIn.html">Dentro de la Ciudadela</a>
-					<a href = "CitadelOut.html">Fuera de la Ciudadela</a>
-					<a href = "Andromeda.html">Especies de Andrómeda</a>
-					<a href = "Other.html">Otras Especies Conocidas</a>
+					<a href = "../introductions/SIntroduction.html">Introducción</a>
+					<div class = "DropDown">
+						<button class = "DropButton">Dentro de la Ciudadela
+							<i class = "fa fa-caret-down"></i>
+							<i class = "fa fa-caret-up"></i>
+						</button>
+						<div class = "DDContent">
+							<a href = "../species/Drell.html">Drell</a>
+							<a href = "../species/Elcor.html">Elcor</a>
+							<a href = "../species/Asari.html">Asari</a>
+							<a href = "../species/Volus.html">Volus</a>
+							<a href = "../species/Hanar.html">Hanar</a>
+							<a href = "../species/Turianos.html">Turianos</a>
+							<a href = "../species/Humanos.html">Humanos</a>
+							<a href = "../species/Salarianos.html">Salarianos</a>
+							<a href = "../species/Cuidadores.html">Cuidadores</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button class = "DropButton">Fuera de la Ciudadela
+							<i class = "fa fa-caret-down"></i>
+							<i class = "fa fa-caret-up"></i>
+						</button>
+						<div class = "DDContent">
+							<a href = "../species/Geth.html">Geth</a>
+							<a href = "../species/Yahg.html">Yahg</a>
+							<a href = "../species/Krogan.html">Krogan</a>
+							<a href = "../species/Vorcha.html">Vorcha</a>
+							<a href = "../species/Quarianos.html">Quarianos</a>
+							<a href = "../species/Batarianos.html">Recolectores</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button class = "DropButton">Especies de Andrómeda
+							<i class = "fa fa-caret-down"></i>
+							<i class = "fa fa-caret-up"></i>
+						</button>
+						<div class = "DDContent">
+							<a href = "../species/Kett.html">Kett</a>
+							<a href = "../species/Relictos.html">Relictos</a>
+							<a href = "../species/Jardaan.html">Jardaan</a>
+							<a href = "../species/Angaras.html">Angaras</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button class = "DropButton">Otras Especies Conocidas
+							<i class = "fa fa-caret-down"></i>
+							<i class = "fa fa-caret-up"></i>
+						</button>
+						<div class = "DDContent">
+							<a href = "../species/Klixen.html">Klixen</a>
+							<a href = "../species/Varren.html">Varren</a>
+							<a href = "../species/Thoriana.html">Thoriana</a>
+							<a href = "../species/Cascarones.html">Cascarones</a>
+							<a href = "../species/Cosechador.html">Cosechadores</a>
+							<a href = "../species/Fauces.html">Fauces Trilladoras</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class = "SN">
-				<button onclick = "Display(1)" class = "SNButton">Juegos
+				<button onclick = "Display(1)" class = "SNButton active">Juegos
 					<i id = "GCD" class = "fa fa-caret-down"></i>
 					<i id = "GCU" class = "fa fa-caret-up"></i>
 				</button>
 				<div id = "GDD" class = "SNContent">
-					<a href = "GIntroduction.html">Introducción</a>
-					<a href = "ME1.html">Mass Effect 1</a>
-					<a href = "ME2.html">Mass Effect 2</a>
-					<a href = "ME3.html">Mass Effect 3</a>
-					<a href = "MEA.html">Mass Effect Andrómeda</a>
+					<a href = "../introductions/GIntroduction.html" class = "active">Introducción</a>
+					<div class = "DropDown">
+						<button class = "DropButton">Mass Effect 1
+							<i class = "fa fa-caret-down"></i>
+							<i class = "fa fa-caret-up"></i>
+						</button>
+						<div class = "DDContent">
+							<a href = "../games/ME1Des.html">Descripción</a>
+							<a href = "../games/ME1Vid.html">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button class = "DropButton">Mass Effect 2
+							<i class = "fa fa-caret-down"></i>
+							<i class = "fa fa-caret-up"></i>
+						</button>
+						<div class = "DDContent">
+							<a href = "../games/ME2Des.html">Descripción</a>
+							<a href = "../games/ME2Vid.html">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button class = "DropButton">Mass Effect 3
+							<i class = "fa fa-caret-down"></i>
+							<i class = "fa fa-caret-up"></i>
+						</button>
+						<div class = "DDContent">
+							<a href = "../games/ME3Des.html">Descripción</a>
+							<a href = "../games/ME3Vid.html">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button class = "DropButton">Mass Effect Andrómeda
+							<i class = "fa fa-caret-down"></i>
+							<i class = "fa fa-caret-up"></i>
+						</button>
+						<div class = "DDContent">
+							<a href = "../games/MEADes.html">Descripción</a>
+							<a href = "../games/MEAVid.html">Video</a>
+						</div>
+					</div>						
 				</div>
 			</div>
 		</nav>
-		<section>
-			<div class = "Content">
+		<section class = "Content">
 				<article id = "I">
 					<h2>Introducción</h2>
 					<p>La saga Mass Effect es un conjunto de 4 juegos más una serie de novelas graficas que presentan un universo cronológicamente ubicado
@@ -65,7 +154,6 @@
 					relee de masa, y parece haber sido construida hace varios miles de años, sin embargo nadie ha sido capaz de determinar que especie
 					o especies han sido responsables de su contrucción.</p>
 				</article>
-			</div>
 		</section>
 		<footer>
 			<h3>Autor:</h3>

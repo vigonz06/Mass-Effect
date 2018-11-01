@@ -139,6 +139,11 @@ a:hover
 	display:none;
 }
 
+.DropDown .fa-caret-up
+{
+	display:none;
+}
+
 nav
 {
 	background-color:#0B0B61;
@@ -175,7 +180,7 @@ nav a
 	margin:0;
 }
 
-nav a:hover, .SNButton:hover, .SNContent a:hover
+nav a:hover, .SNButton:hover, .SNContent a:hover, .DDContent a:hover
 {
 	background-color:#0B2161;
 	color:#FFFFFF;
@@ -192,19 +197,25 @@ nav a:hover, .SNButton:hover, .SNContent a:hover
 	left:0;
 }
 
-.SNContent a
+.SNContent .DropButton
 {
 	text-decoration:none;
 	color:#FFFFFF;
 	float:left;
 }
 
-.show
+.DDContent
 {
-	display:block;
+	display:none;
+	position:absolute;
+	background-color:#F1F1F1;
+	min-width:160px;
+	z-index:1;
 }
 
-.active, .SN .active
+
+
+.active, .SN .active, .DDContent .active
 {
 	background-color:#0B2161;
 }
