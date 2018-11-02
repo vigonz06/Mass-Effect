@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<meta charset = "UTF-8"/>
+		<script src = "../script/script.js"></script>
+		<title>Mass Effect 2 | Saga Mass Effect</title>
+		<meta name = "generator" content = "Notepad++">
+		<link rel = "icon" href = "../icon/ME.ico" type = "image/x-icon">
+		<meta name = "description" content = "Mass Effect Saga Info Web">
+		<meta name = "author" content = "Victor González del Hierro del Rio"/>
+		<link rel = "stylesheet" type = "text/css" href = "../style/mystyle.css">
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			<div class = "Header BG"></div>
+			<div class = "Header Date">26/10/2018</div>
+		</header>
+		<nav>
+			<a href = "../introductions/Index.html">Introducción</a>
+			<div class = "SN">
+				<button onclick = "Display(0)" class = "SNButton">Especies
+					<i id = "SCD" class = "fa fa-caret-down"></i>
+					<i id = "SCU" class = "fa fa-caret-up"></i>
+				</button>
+				<div id = "SDD" class = "SNContent">
+					<a href = "../introductions/SIntroduction.html">Introducción</a>
+					<div class = "DropDown">
+						<button onclick = "Display(2)" class = "DropButton">Dentro de la Ciudadela
+							<i id = "SCD0" class = "fa fa-caret-down"></i>
+							<i id = "SCU0" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC0" class = "DDContent">
+							<a href = "../species/CitadelIn.html#Drell">Drell</a>
+							<a href = "../species/CitadelIn.html#Elcor">Elcor</a>
+							<a href = "../species/CitadelIn.html#Asari">Asari</a>
+							<a href = "../species/CitadelIn.html#Volus">Volus</a>
+							<a href = "../species/CitadelIn.html#Hanar">Hanar</a>
+							<a href = "../species/CitadelIn.html#Turianos">Turianos</a>
+							<a href = "../species/CitadelIn.html#Humanos">Humanos</a>
+							<a href = "../species/CitadelIn.html#Salarianos">Salarianos</a>
+							<a href = "../species/CitadelIn.html#Cuidadores">Cuidadores</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(3)" class = "DropButton">Fuera de la Ciudadela
+							<i id = "SCD1" class = "fa fa-caret-down"></i>
+							<i id = "SCU1" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC1" class = "DDContent">
+							<a href = "../species/CitadelOut.html#Geth">Geth</a>
+							<a href = "../species/CitadelOut.html#Yahg">Yahg</a>
+							<a href = "../species/CitadelOut.html#Krogan">Krogan</a>
+							<a href = "../species/CitadelOut.html#Vorcha">Vorcha</a>
+							<a href = "../species/CitadelOut.html#Quarianos">Quarianos</a>
+							<a href = "../species/CitadelOut.html#Batarianos">Batarianos</a>
+							<a href = "../species/CitadelOut.html#Recolectores">Recolectores</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(4)" class = "DropButton">Especies Históricas
+							<i id = "SCD2" class = "fa fa-caret-down"></i>
+							<i id = "SCU2" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC2" class = "DDContent">
+							<a href = "../species/Historic.html#Rachni">Rachni</a>
+							<a href = "../species/Historic.html#Proteanos">Proteanos</a>
+							<a href = "../species/Historic.html#Segadores">Segadores</a>
+							<a href = "../species/Historic.html#Leviatanes">Leviatanes</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(5)" class = "DropButton">Especies de Andrómeda
+							<i id = "SCD3" class = "fa fa-caret-down"></i>
+							<i id = "SCU3" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC3" class = "DDContent">
+							<a href = "../species/Andromeda.html#Kett">Kett</a>
+							<a href = "../species/Andromeda.html#Relictos">Relictos</a>
+							<a href = "../species/Andromeda.html#Jardaan">Jardaan</a>
+							<a href = "../species/Andromeda.html#Angaras">Angaras</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(6)" class = "DropButton">Otras Especies Conocidas
+							<i id = "SCD4" class = "fa fa-caret-down"></i>
+							<i id = "SCU4" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC4" class = "DDContent">
+							<a href = "../species/Others.html#Klixen">Klixen</a>
+							<a href = "../species/Others.html#Varren">Varren</a>
+							<a href = "../species/Others.html#Thoriana">Thoriana</a>
+							<a href = "../species/Others.html#Cascarones">Cascarones</a>
+							<a href = "../species/Others.html#Cosechadores">Cosechadores</a>
+							<a href = "../species/Others.html#Fauces">Fauces Trilladoras</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "SN">
+				<button onclick = "Display(1)" class = "SNButton active">Juegos
+					<i id = "GCD" class = "fa fa-caret-down"></i>
+					<i id = "GCU" class = "fa fa-caret-up"></i>
+				</button>
+				<div id = "GDD" class = "SNContent">
+					<a href = "../introductions/GIntroduction.html">Introducción</a>
+					<div class = "DropDown">
+						<button onclick = "Display(7)" class = "DropButton">Mass Effect 1
+							<i id = "GCD0" class = "fa fa-caret-down"></i>
+							<i id = "GCU0" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC0" class = "DDContent">
+							<a href = "../games/ME1.html#Des">Descripción</a>
+							<a href = "../games/ME1.html#Vid">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(8)" class = "DropButton active">Mass Effect 2
+							<i id = "GCD1" class = "fa fa-caret-down"></i>
+							<i id = "GCU1" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC1" class = "DDContent">
+							<a href = "../games/ME2.html#Des">Descripción</a>
+							<a href = "../games/ME2.html#Vid">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(9)" class = "DropButton">Mass Effect 3
+							<i id = "GCD2" class = "fa fa-caret-down"></i>
+							<i id = "GCU2" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC2" class = "DDContent">
+							<a href = "../games/ME3.html#Des">Descripción</a>
+							<a href = "../games/ME3.html#Vid">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(10)" class = "DropButton">Mass Effect Andrómeda
+							<i id = "GCD3" class = "fa fa-caret-down"></i>
+							<i id = "GCU3" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC3" class = "DDContent">
+							<a href = "../games/MEA.html#Des">Descripción</a>
+							<a href = "../games/MEA.html#Vid">Video</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class = "Games">
+			<h2>Mass Effect 2</h2>
+			<article id = "ME2">
+				<a id = "Des"></a>
+				<p>Ésta es la segunda entrega de la saga, comienza poco tiempo después de los últimos sucesos del Mass Effect 1, tras derrotar a Saren y al Soberano, la Normandy, bajo el mando del Comandante 
+				Sheppard, tiene la misión de explorar la galaxia en busca de algún planeta que aún presente actividad Geth, ya que tras la destrucción del soberano, parecen haberse esfumado. Durante un vuelo 
+				rutinario la Normandy se topa con lo que en un principio parece ser una nave Geth, sin embargo su gran tamaño y su potencia de fuego revelan que no se trata de los Geth, si no de un enemigo 
+				desconocido, un enemigo que en apenas unos minutos consigue inhabilitar la Normandy, debido a lo cual la tripulación inicia el protocolo de huída en cápsulas de escape, sin embargo la nave 
+				es destruida antes de que Sheppard sea capaz de llegar a su cápsula, quedando flotando en el espacio al destruirse la Normandy, tras lo cual es arrastrado por la gravedad del planeta mas cercano 
+				y acaba impactando contra su superficie.</p>
+				
+				<p>Tras ser Sheppard declarado oficialmente muerto, la organización de Cerberus recupera sus restos e inicia el llamado proyecto Lázaro (<a href = "http://es.masseffect.wikia.com/wiki/Proyecto_Lázaro"
+				target = "_blank">Lazarus Proyect</a>), en el que, utilizando los restos recuperados del Comandante Sheppard, y usando tecnología medica y cibernética avanzada, le "reconstruyen". Tras completar 
+				la reconstrucción, Cerberus le proporciona a Sheppard una nueva nave (<a href = "http://masseffect.wikia.com/wiki/Normandy_SR-2" target = "_blank">Normandy SR-2</a>), ademas de equipo de combate, 
+				una pequeña tripulacion, e información sobre la nave que destruyó la Normandy original. Dicha nave pertenecía a los Recolectores, una misteriosa raza recientemente descubierta, que invade planetas 
+				humanos uno a uno, y secuestran a toda su población. Cerberus tambien proporciona a Sheppard información sobre sujetos de interés que podrian resultar buenas incorporaciones a su tripulación.</p>
+				
+				<p>Sheppard comienza entonces una vuelta de reclutamiento buscando a los sujetos que le ha proporcionado Cerberus, al tiempo que busca más información sobre los recolectores. Encuentra Recolectores 
+				en practicamente todos los planetas que visita, sin embargo no es capaz de encontrar ninguna información útil sobre ellos, hasta que los cientificos de Cerberus encuentran un patrón y son capaces de 
+				predecir donde irían los Recolectores a continuación. Sheppar va a ese planeta con su pelotón y consigue frenar el avance de los Recolectores en ese mundo. Mas adelante consiguen averiguar dónde pararía 
+				la nave para reponerse, por lo que Sheppard acude a abordarla, y consigue recuperar ciertos datos que proporcionan a la Normandy la ubicación exacta de la base de los Recolectores.</p>
+				
+				<p>La Normandy emprende entonces un asalto contra la base Recolectora, en la que descubre que los Recolectores transportan allí a los humanos secuestrados, los meten en celdas individuales, y ahí los 
+				procesan y los utilizan para crear un nuevo Segador, siendo aparentemente ese el origen de cada Segador. Sheppard detruye al Segador en construcción, y a continuación la base de los recolectores, y 
+				después de eso deja de colaborar con Cerberus y vuelve con la Alianza. Sin embargo no es consciente de que al destruir la base, alerta a todos los segadores, actualmente en letargo en el Espacio Profundo, 
+				lo que hace que despierten y se dirijan a la Vía Lactea.</p>
+			</article>
+			<article class = "Vid">
+				<a id = "Vid"></a>
+				<object type = "application/x-shockwave-flash" data = "https://www.youtube.com/v/6yC-A2To-t8?version=3"></object>
+			</article>
+		</section>
+		<footer>
+			<h3>Autor:</h3>
+			<div class = "ATR">Víctor González del Hierro del Río</div>
+		</footer>
+	</body>
+</html>

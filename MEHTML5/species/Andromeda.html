@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<meta charset = "UTF-8">
+		<script src = "../script/script.js"></script>
+		<meta id = "generator" content = "Notepad++">
+		<title>Especies de Andrómeda | Saga Mass Effect</title>
+		<link rel = "icon" href = "../icon/ME.ico" type = "image/x-icon">
+		<meta id = "description" content = "Mass Effect Saga Info Web">
+		<meta id = "author" content = "Victor González del Hierro del Rio"/>
+		<link rel = "stylesheet" type = "text/css" href = "../style/mystyle.css">
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			<div class = "Header BG"></div>
+			<div class = "Header Date">26/10/2018</div>
+		</header>
+		<nav>
+			<a href = "../introductions/Index.html">Introducción</a>
+			<div class = "SN">
+				<button onclick = "Display(0)" class = "SNButton active">Especies
+					<i id = "SCD" class = "fa fa-caret-down"></i>
+					<i id = "SCU" class = "fa fa-caret-up"></i>
+				</button>
+				<div id = "SDD" class = "SNContent">
+					<a href = "../introductions/SIntroduction.html">Introducción</a>
+					<div class = "DropDown">
+						<button onclick = "Display(2)" class = "DropButton">Dentro de la Ciudadela
+							<i id = "SCD0" class = "fa fa-caret-down"></i>
+							<i id = "SCU0" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC0" class = "DDContent">
+							<a href = "../species/CitadelIn.html#Drell">Drell</a>
+							<a href = "../species/CitadelIn.html#Elcor">Elcor</a>
+							<a href = "../species/CitadelIn.html#Asari">Asari</a>
+							<a href = "../species/CitadelIn.html#Volus">Volus</a>
+							<a href = "../species/CitadelIn.html#Hanar">Hanar</a>
+							<a href = "../species/CitadelIn.html#Turianos">Turianos</a>
+							<a href = "../species/CitadelIn.html#Humanos">Humanos</a>
+							<a href = "../species/CitadelIn.html#Salarianos">Salarianos</a>
+							<a href = "../species/CitadelIn.html#Cuidadores">Cuidadores</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(3)" class = "DropButton">Fuera de la Ciudadela
+							<i id = "SCD1" class = "fa fa-caret-down"></i>
+							<i id = "SCU1" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC1" class = "DDContent">
+							<a href = "../species/CitadelOut.html#Geth">Geth</a>
+							<a href = "../species/CitadelOut.html#Yahg">Yahg</a>
+							<a href = "../species/CitadelOut.html#Krogan">Krogan</a>
+							<a href = "../species/CitadelOut.html#Vorcha">Vorcha</a>
+							<a href = "../species/CitadelOut.html#Quarianos">Quarianos</a>
+							<a href = "../species/CitadelOut.html#Batarianos">Batarianos</a>
+							<a href = "../species/CitadelOut.html#Recolectores">Recolectores</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(4)" class = "DropButton">Especies Históricas
+							<i id = "SCD2" class = "fa fa-caret-down"></i>
+							<i id = "SCU2" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC2" class = "DDContent">
+							<a href = "../species/Historic.html#Rachni">Rachni</a>
+							<a href = "../species/Historic.html#Proteanos">Proteanos</a>
+							<a href = "../species/Historic.html#Segadores">Segadores</a>
+							<a href = "../species/Historic.html#Leviatanes">Leviatanes</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(5)" class = "DropButton active">Especies de Andrómeda
+							<i id = "SCD3" class = "fa fa-caret-down"></i>
+							<i id = "SCU3" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC3" class = "DDContent">
+							<a href = "../species/Andromeda.html#Kett">Kett</a>
+							<a href = "../species/Andromeda.html#Relictos">Relictos</a>
+							<a href = "../species/Andromeda.html#Jardaan">Jardaan</a>
+							<a href = "../species/Andromeda.html#Angaras">Angaras</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(6)" class = "DropButton">Otras Especies Conocidas
+							<i id = "SCD4" class = "fa fa-caret-down"></i>
+							<i id = "SCU4" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC4" class = "DDContent">
+							<a href = "../species/Others.html#Klixen">Klixen</a>
+							<a href = "../species/Others.html#Varren">Varren</a>
+							<a href = "../species/Others.html#Thoriana">Thoriana</a>
+							<a href = "../species/Others.html#Cascarones">Cascarones</a>
+							<a href = "../species/Others.html#Cosechadores">Cosechadores</a>
+							<a href = "../species/Others.html#Fauces">Fauces Trilladoras</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "SN">
+				<button onclick = "Display(1)" class = "SNButton">Juegos
+					<i id = "GCD" class = "fa fa-caret-down"></i>
+					<i id = "GCU" class = "fa fa-caret-up"></i>
+				</button>
+				<div id = "GDD" class = "SNContent">
+					<a href = "../introductions/GIntroduction.html">Introducción</a>
+					<div class = "DropDown">
+						<button onclick = "Display(7)" class = "DropButton">Mass Effect 1
+							<i id = "GCD0" class = "fa fa-caret-down"></i>
+							<i id = "GCU0" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC0" class = "DDContent">
+							<a href = "../games/ME1.html#Des">Descripción</a>
+							<a href = "../games/ME1.html#Vid">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(8)" class = "DropButton">Mass Effect 2
+							<i id = "GCD1" class = "fa fa-caret-down"></i>
+							<i id = "GCU1" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC1" class = "DDContent">
+							<a href = "../games/ME2.html#Des">Descripción</a>
+							<a href = "../games/ME2.html#Vid">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(9)" class = "DropButton">Mass Effect 3
+							<i id = "GCD2" class = "fa fa-caret-down"></i>
+							<i id = "GCU2" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC2" class = "DDContent">
+							<a href = "../games/ME3.html#Des">Descripción</a>
+							<a href = "../games/ME3.html#Vid">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(10)" class = "DropButton">Mass Effect Andrómeda
+							<i id = "GCD3" class = "fa fa-caret-down"></i>
+							<i id = "GCU3" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC3" class = "DDContent">
+							<a href = "../games/MEA.html#Des">Descripción</a>
+							<a href = "../games/MEA.html#Vid">Video</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class = "Species">
+			<h2>Especies de Andrómeda</h2>
+			<article>
+				<a id = "Kett"></a>
+				<iframe src = "http://masseffect.wikia.com/wiki/Kett" scrolling = "auto"></iframe>
+			</article>
+			<article>
+				<a id = "Relictos"></a>
+				<iframe src = "http://masseffect.wikia.com/wiki/Remnant" scrolling = "auto"></iframe>
+			</article>
+			<article>
+				<a id = "Jardaan"></a>
+				<iframe src = "http://masseffect.wikia.com/wiki/Jardaan" scrolling = "auto"></iframe>
+			</article>
+			<article>
+				<a id = "Angaras"></a>
+				<iframe src = "http://masseffect.wikia.com/wiki/Angara" scrolling = "auto"></iframe>
+			</article>
+		</section>
+		<footer>
+			<h3>Autor:</h3>
+			<div class = "ATR">Víctor González del Hierro del Río</div>
+		</footer>
+	</body>
+</html>

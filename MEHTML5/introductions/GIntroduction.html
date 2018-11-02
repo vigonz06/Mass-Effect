@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<meta charset = "UTF-8"/>
+		<title>Juegos | Saga Mass Effect</title>
+		<script src = "../script/script.js"></script>
+		<meta name = "generator" content = "Notepad++">
+		<link rel = "icon" href = "../icon/ME.ico" type = "image/x-icon">
+		<meta name = "description" content = "Mass Effect Saga Info Web">
+		<meta name = "author" content = "Victor González del Hierro del Rio"/>
+		<link rel = "stylesheet" type = "text/css" href = "../style/mystyle.css">
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			<div class = "Header BG"></div>
+			<div class = "Header Date">26/10/2018</div>
+		</header>
+		<nav>
+			<a href = "../introductions/Index.html">Introducción</a>
+			<div class = "SN">
+				<button onclick = "Display(0)" class = "SNButton">Especies
+					<i id = "SCD" class = "fa fa-caret-down"></i>
+					<i id = "SCU" class = "fa fa-caret-up"></i>
+				</button>
+				<div id = "SDD" class = "SNContent">
+					<a href = "../introductions/SIntroduction.html">Introducción</a>
+					<div class = "DropDown">
+						<button onclick = "Display(2)" class = "DropButton">Dentro de la Ciudadela
+							<i id = "SCD0" class = "fa fa-caret-down"></i>
+							<i id = "SCU0" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC0" class = "DDContent">
+							<a href = "../species/CitadelIn.html#Drell">Drell</a>
+							<a href = "../species/CitadelIn.html#Elcor">Elcor</a>
+							<a href = "../species/CitadelIn.html#Asari">Asari</a>
+							<a href = "../species/CitadelIn.html#Volus">Volus</a>
+							<a href = "../species/CitadelIn.html#Hanar">Hanar</a>
+							<a href = "../species/CitadelIn.html#Turianos">Turianos</a>
+							<a href = "../species/CitadelIn.html#Humanos">Humanos</a>
+							<a href = "../species/CitadelIn.html#Salarianos">Salarianos</a>
+							<a href = "../species/CitadelIn.html#Cuidadores">Cuidadores</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(3)" class = "DropButton">Fuera de la Ciudadela
+							<i id = "SCD1" class = "fa fa-caret-down"></i>
+							<i id = "SCU1" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC1" class = "DDContent">
+							<a href = "../species/CitadelOut.html#Geth">Geth</a>
+							<a href = "../species/CitadelOut.html#Yahg">Yahg</a>
+							<a href = "../species/CitadelOut.html#Krogan">Krogan</a>
+							<a href = "../species/CitadelOut.html#Vorcha">Vorcha</a>
+							<a href = "../species/CitadelOut.html#Quarianos">Quarianos</a>
+							<a href = "../species/CitadelOut.html#Batarianos">Batarianos</a>
+							<a href = "../species/CitadelOut.html#Recolectores">Recolectores</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(4)" class = "DropButton">Especies Históricas
+							<i id = "SCD2" class = "fa fa-caret-down"></i>
+							<i id = "SCU2" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC2" class = "DDContent">
+							<a href = "../species/Historic.html#Rachni">Rachni</a>
+							<a href = "../species/Historic.html#Proteanos">Proteanos</a>
+							<a href = "../species/Historic.html#Segadores">Segadores</a>
+							<a href = "../species/Historic.html#Leviatanes">Leviatanes</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(5)" class = "DropButton">Especies de Andrómeda
+							<i id = "SCD3" class = "fa fa-caret-down"></i>
+							<i id = "SCU3" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC3" class = "DDContent">
+							<a href = "../species/Andromeda.html#Kett">Kett</a>
+							<a href = "../species/Andromeda.html#Relictos">Relictos</a>
+							<a href = "../species/Andromeda.html#Jardaan">Jardaan</a>
+							<a href = "../species/Andromeda.html#Angaras">Angaras</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(6)" class = "DropButton">Otras Especies Conocidas
+							<i id = "SCD4" class = "fa fa-caret-down"></i>
+							<i id = "SCU4" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "SDDC4" class = "DDContent">
+							<a href = "../species/Others.html#Klixen">Klixen</a>
+							<a href = "../species/Others.html#Varren">Varren</a>
+							<a href = "../species/Others.html#Thoriana">Thoriana</a>
+							<a href = "../species/Others.html#Cascarones">Cascarones</a>
+							<a href = "../species/Others.html#Cosechadores">Cosechadores</a>
+							<a href = "../species/Others.html#Fauces">Fauces Trilladoras</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "SN">
+				<button onclick = "Display(1)" class = "SNButton active">Juegos
+					<i id = "GCD" class = "fa fa-caret-down"></i>
+					<i id = "GCU" class = "fa fa-caret-up"></i>
+				</button>
+				<div id = "GDD" class = "SNContent">
+					<a href = "../introductions/GIntroduction.html" class = "active">Introducción</a>
+					<div class = "DropDown">
+						<button onclick = "Display(7)" class = "DropButton">Mass Effect 1
+							<i id = "GCD0" class = "fa fa-caret-down"></i>
+							<i id = "GCU0" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC0" class = "DDContent">
+							<a href = "../games/ME1.html#Des">Descripción</a>
+							<a href = "../games/ME1.html#Vid">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(8)" class = "DropButton">Mass Effect 2
+							<i id = "GCD1" class = "fa fa-caret-down"></i>
+							<i id = "GCU1" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC1" class = "DDContent">
+							<a href = "../games/ME2.html#Des">Descripción</a>
+							<a href = "../games/ME2.html#Vid">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(9)" class = "DropButton">Mass Effect 3
+							<i id = "GCD2" class = "fa fa-caret-down"></i>
+							<i id = "GCU2" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC2" class = "DDContent">
+							<a href = "../games/ME3.html#Des">Descripción</a>
+							<a href = "../games/ME3.html#Vid">Video</a>
+						</div>
+					</div>
+					<div class = "DropDown">
+						<button onclick = "Display(10)" class = "DropButton">Mass Effect Andrómeda
+							<i id = "GCD3" class = "fa fa-caret-down"></i>
+							<i id = "GCU3" class = "fa fa-caret-up"></i>
+						</button>
+						<div id = "GDDC3" class = "DDContent">
+							<a href = "../games/MEA.html#Des">Descripción</a>
+							<a href = "../games/MEA.html#Vid">Video</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section>
+			<article id = "GI">
+				<h2>Juegos</h2>
+				<p>La saga giran en torno a <a href = "http://es.masseffect.wikia.com/wiki/Shepard" target = "_blank">Sheppard</a>, un Comandante de la Alianza, que también ostenta el cargo de Espectro del Consejo. 
+				Está al mando de la <a href = "http://masseffect.wikia.com/wiki/SSV_Normandy" target = "_blank">Normady</a>, una pequeña nave, con una reducida tripulacion, 
+				que tiene la misión de investigar a los Segadores, una misteriosa raza que aparece de repente en la galaxia y amenaza con exterminar la vida de toda la galaxia.</p>
+				
+				<p>A lo largo de los tres primeros juegos, el Comandante Sheppard visitará practicamente todos los planetas habitables de la galaxia (y algunos que no lo son
+				tanto) con el fin de desentrañar el misterio que envuelve a estos misteriosos Segadores y el motivo que tienen para tanta destrucción. Los descubrimientos que 
+				realiza serán motivo de cambio del paradigma de toda la galaxia...</p>
+				
+				</p>Tras los sucesos de la trilogía original de Mass Effect, nos llega Mass Effect: Andrómeda. El juego transcurre más de 600 años después de los sucesos de la 
+				trilogia original, y cuenta la historia de un gran grupo formado por todas las razas de la Vía Lactea, que contruyen Arcas (enormes naves con capacidad de transportar 
+				a miles de cuerpos en ivernación) para dirigirse a la galaxia de Andrómeda y explorarla con el objetivo de establecer nuevas colonias y encontrar y establecer relaciones 
+				diplomaticas con nuevas razas antes desconocidas</p>
+				
+				<p>Todos los juegos de la sala son de rol, es decir, a lo largo de ellos se nos presentan varias oportunidades de tomar ciertas decisiones, las cuales tienen que ver en su 
+				mayoria con dialodos (el mensaje, o tono con que te diriges al personaje con el que estés hablando). Todas estas decisiones tienen repercusiones en el propio juego, y en 
+				los juegos posteriores.</p>
+			</article>
+		</section>
+		<footer>
+			<h3>Autor:</h3>
+			<div class = "ATR">Víctor González del Hierro del Río</div>
+		</footer>
+	</body>
+</html>
