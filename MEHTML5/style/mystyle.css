@@ -8,45 +8,21 @@
 {
 	background-image:url(../img/N7.jpg);
 	background-size:100% 100%;
-	height:545px;
 }
 
-#SI
+#GI, .Games
 {
-	background-image:url(../img/MES.jpg);
-	background-size:100% 100%;	
-	height:545px;
+	background-color:#0A0A0A;
 }
 
-#GI
+ #SI, .Species
 {
-	background-image:url(../img/MEG.jpg);
-	background-size:100% 100%;
-	height:545px;
+	background-color:#0B243B;
 }
 
-#ME1
+.NoOF
 {
-	background-image:url(../img/ME1.jpg);
-	background-size:100% 100%;
-}
-
-#ME2
-{
-	background-image:url(../img/ME2.jpg);
-	background-size:100% 100%;
-}
-
-#ME3
-{
-	background-image:url(../img/ME3.png);
-	background-size:100% 100%;
-}
-
-#MEA
-{
-	background-image:url(../img/MEA.jpg);
-	background-size:100% 100%;
+	overflow:hidden;
 }
 
 body
@@ -96,14 +72,14 @@ section
 
 article
 {
-	font-family:MEFont;
-	text-align:justify;
 	overflow:auto;
 	overflow-x:hidden;
+	font-family:MEFont;
+	text-align:justify;
+	height:585px;
 	color:#0080FF;
 	padding:20px;
-	height:585px;
-	width:97%
+	width:96.5%
 }
 
 footer
@@ -257,20 +233,17 @@ object
 	width:100%;
 }
 
-.Games
+.SArticle
 {
-	background-color:#000000;
-}
-
-.Species
-{
-	background-color:#0B243B;
+	overflow:hidden;
+	height:585px;
 }
 
 .Vid
 {
 	overflow:hidden;
 	height:585px;
+	width:100%;
 	padding:0;
 	margin:0;
 	border:0;
@@ -278,24 +251,35 @@ object
 
 iframe
 {
-	margin-left:5%;
+	overflow:scroll;
+	overflow-x:hidden;
 	height:100%;
-	width:90%;
+	width:100%;
 	padding:0;
 	border:0;
 }
 
-::-webkit-scrollbar, iframe::-webkit-scrollbar
+::-webkit-scrollbar
 {
-	width:5px;
+	width:10px;
 }
 
-::-webkit-scrollbar-track, iframe::-webkit-scrollbar-track
+::-webkit-scrollbar-track
 {
-	border-radius:2px;
+	border-radius:5px;
 }
 
-::-webkit-scrollbar-thumb, iframe::-webkit-scrollbar-thumb
+::-webkit-scrollbar-thumb
 {
-	border-radius:2px;
+	border-radius:5px;
+}
+
+section::-webkit-scrollbar-thumb
+{
+	background-color:#0000FF;
+}
+
+article::-webkit-scrollbar-thumb
+{
+	background-color:#00FFFF;
 }
