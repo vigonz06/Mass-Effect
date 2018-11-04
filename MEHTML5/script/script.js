@@ -1,40 +1,39 @@
-var id =    ["SDD", "GDD", "SDDC0", "SDDC1", "SDDC2", "SDDC3", "SDDC4", "GDDC0", "GDDC1", "GDDC2", "GDDC3"];
-var ups =   ["SCU", "GCU", "SCU0", "SCU1", "SCU2", "SCU3", "SCU4", "GCU0", "GCU1", "GCU2", "GCU3"];
-var downs = ["SCD", "GCD", "SCD0", "SCD1", "SCD2", "SCD3", "SCD4", "GCD0", "GCD1", "GCD2", "GCD3"];
+var Ids = [
+[{ButtonId:"SDD", CaretUpId:"SCU", CaretDownId:"SCD"}, {ButtonId:"GDD", CaretUpId:"GCU", CaretDownId:"GCD"}],
+[{ButtonId:"SDDC0", CaretUpId:"SCU0", CaretDownId:"SCD0"}, {ButtonId:"SDDC1", CaretUpId:"SCU1", CaretDownId:"SCD1"},{ButtonId:"SDDC2", CaretUpId:"SCU2", CaretDownId:"SCD2"},{ButtonId:"SDDC3", CaretUpId:"SCU3", CaretDownId:"SCD3"},{ButtonId:"SDDC4", CaretUpId:"SCU4", CaretDownId:"SCD4"}],
+[{ButtonId:"GDDC0", CaretUpId:"GCU0", CaretDownId:"GCD0"}, {ButtonId:"GDDC1", CaretUpId:"GCU1", CaretDownId:"GCD1"}, {ButtonId:"GDDC2", CaretUpId:"GCU2", CaretDownId:"GCD2"}, {ButtonId:"GDDC3", CaretUpId:"GCU3", CaretDownId:"GCD3"}]
+];
 
-function Display(i)
+function Display(i, j)
 {
-	var j, k;
+	var k;	
 	
-	j = (i > 1) ? (i > 6) ?  7 : 2 : 0;
-	k = (i > 1) ? (i > 6) ? 10 : 6 : 1;
+	document.getElementById(Ids[i][j].ButtonId).classList.toggle('show');
 	
-	document.getElementById(id[i]).classList.toggle('show');
-	
-	if(document.getElementById(downs[i]).style.display === 'none')
+	if(document.getElementById(Ids[i][j].CaretDownId).style.display === 'none')
 	{
-		document.getElementById(downs[i]).style.display = 'inline-block';
-		document.getElementById(ups[i]).style.display = 'none';
+		document.getElementById(Ids[i][j].CaretDownId).style.display = 'inline-block';
+		document.getElementById(Ids[i][j].CaretUpId).style.display = 'none';
 	}
 	else
 	{
-		document.getElementById(ups[i]).style.display = 'inline-block';
-		document.getElementById(downs[i]).style.display = 'none';
+		document.getElementById(Ids[i][j].CaretUpId).style.display = 'inline-block';
+		document.getElementById(Ids[i][j].CaretDownId).style.display = 'none';
 	}
 	
-	for(; j <= k; j++)
+	for(k in Ids[i])
 	{
-		if(!(j == i))
+		if(!(k == j))
 		{
-			if(document.getElementById(id[j]).classList.contains('show'))
+			if(document.getElementById(Ids[i][k].ButtonId).classList.contains('show'))
 			{
-				document.getElementById(id[j]).classList.remove('show');
+				document.getElementById(Ids[i][k].ButtonId).classList.remove('show');
 			}
 			
-			if(document.getElementById(downs[j]).style.display === 'none')
+			if(document.getElementById(Ids[i][k].CaretDownId).style.display === 'none')
 			{
-				document.getElementById(downs[j]).style.display = 'inline-block';
-				document.getElementById(ups[j]).style.display = 'none';
+				document.getElementById(Ids[i][k].CaretDownId).style.display = 'inline-block';
+				document.getElementById(Ids[i][k].CaretUpId).style.display = 'none';
 			}
 		}
 	}
@@ -42,23 +41,20 @@ function Display(i)
 
 window.onclick = function(event)
 {
-	var i, j, k;
+	var i, j;
 	
 	if(!event.target.matches('.SNButton') && !event.target.matches('.DropButton'))
 	{
-		for(i in downs)
+		for(i in Ids)
 		{
-			document.getElementById(downs[i]).style.display = 'inline-block';
-		}
-		for(j in ups)
-		{
-			document.getElementById(ups[j]).style.display = 'none';
-		}
-		for(k in id)
-		{
-			if(document.getElementById(id[k]).classList.contains('show'))
+			for(j in Ids)
 			{
-				document.getElementById(id[k]).classList.remove('show');
+				if(document.getElementById(Ids[i][j].ButtonId).classList.contains('show'))
+				{
+					document.getElementById(Ids[i][j].CaretDownId).style.display = 'inline-block';
+					document.getElementById(Ids[i][j].ButtonId).classList.remove('show');
+					document.getElementById(Ids[i][j].CaretUpId).style.display = 'none';
+				}
 			}
 		}
 	}
