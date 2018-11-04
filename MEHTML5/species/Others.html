@@ -14,7 +14,7 @@
 	<body>
 		<header>
 			<div class = "Header BG"></div>
-			<date class = "Header">26/10/2018</date>
+			<div class = "Header Date">26/10/2018</div>
 		</header>
 		<nav>
 			<a href = "../introductions/Index.html">Introducción</a>
@@ -43,7 +43,7 @@
 						</div>
 					</div>
 					<div class = "DropDown">
-						<button onclick = "SDisplay(0)" class = "DropButton">Fuera de la Ciudadela
+						<button onclick = "Display(3)" class = "DropButton">Fuera de la Ciudadela
 							<i id = "SCD1" class = "fa fa-caret-down"></i>
 							<i id = "SCU1" class = "fa fa-caret-up"></i>
 						</button>
@@ -58,7 +58,7 @@
 						</div>
 					</div>
 					<div class = "DropDown">
-						<button onclick = "SDisplay(1)" class = "DropButton">Especies Históricas
+						<button onclick = "Display(4)" class = "DropButton">Especies Históricas
 							<i id = "SCD2" class = "fa fa-caret-down"></i>
 							<i id = "SCU2" class = "fa fa-caret-up"></i>
 						</button>
@@ -70,7 +70,7 @@
 						</div>
 					</div>
 					<div class = "DropDown">
-						<button onclick = "SDisplay(2)" class = "DropButton">Especies de Andrómeda
+						<button onclick = "Display(5)" class = "DropButton">Especies de Andrómeda
 							<i id = "SCD3" class = "fa fa-caret-down"></i>
 							<i id = "SCU3" class = "fa fa-caret-up"></i>
 						</button>
@@ -82,7 +82,7 @@
 						</div>
 					</div>
 					<div class = "DropDown">
-						<button onclick = "SDisplay(3)" class = "DropButton active">Otras Especies Conocidas
+						<button onclick = "Display(6)" class = "DropButton active">Otras Especies Conocidas
 							<i id = "SCD4" class = "fa fa-caret-down"></i>
 							<i id = "SCU4" class = "fa fa-caret-up"></i>
 						</button>
@@ -105,7 +105,7 @@
 				<div id = "GDD" class = "SNContent">
 					<a href = "../introductions/GIntroduction.html">Introducción</a>
 					<div class = "DropDown">
-						<button onclick = "GDisplay(0)" class = "DropButton">Mass Effect 1
+						<button onclick = "Display(7)" class = "DropButton">Mass Effect 1
 							<i id = "GCD0" class = "fa fa-caret-down"></i>
 							<i id = "GCU0" class = "fa fa-caret-up"></i>
 						</button>
@@ -115,7 +115,7 @@
 						</div>
 					</div>
 					<div class = "DropDown">
-						<button onclick = "GDisplay(1)" class = "DropButton">Mass Effect 2
+						<button onclick = "Display(8)" class = "DropButton">Mass Effect 2
 							<i id = "GCD1" class = "fa fa-caret-down"></i>
 							<i id = "GCU1" class = "fa fa-caret-up"></i>
 						</button>
@@ -125,7 +125,7 @@
 						</div>
 					</div>
 					<div class = "DropDown">
-						<button onclick = "GDisplay(2)" class = "DropButton">Mass Effect 3
+						<button onclick = "Display(9)" class = "DropButton">Mass Effect 3
 							<i id = "GCD2" class = "fa fa-caret-down"></i>
 							<i id = "GCU2" class = "fa fa-caret-up"></i>
 						</button>
@@ -135,7 +135,7 @@
 						</div>
 					</div>
 					<div class = "DropDown">
-						<button onclick = "GDisplay(3)" class = "DropButton">Mass Effect Andrómeda
+						<button onclick = "Display(10)" class = "DropButton">Mass Effect Andrómeda
 							<i id = "GCD3" class = "fa fa-caret-down"></i>
 							<i id = "GCU3" class = "fa fa-caret-up"></i>
 						</button>
@@ -146,60 +146,8 @@
 					</div>
 				</div>
 			</div>
-			<div class = "SN">
-				<button onclick = "Display(3)" class = "SNButton">Clases
-					<i id = "CCD" class = "fa fa-caret-down"></i>
-					<i id = "CCU" class = "fa fa-caret-up"></i>
-				</button>
-				<div id = "CDD" class = "SNContent">
-					<a href = "../introductions/CIntrodution.html">Introducción</a>
-					<div class = "DropDown">
-						<button onclick = "CDisplay(0)" class = "DropButton">Fisicas
-							<i id = "CCD0" class = "fa fa-caret-down"></i>
-							<i id = "CCU0" class = "fa fa-caret-up"></i>
-						</button>
-						<div id = "CDDC0" class = "DDContent">
-							<a href = "../classes/Soldier.html">Soldado</a>
-							<a href = "../classes/Vanguard.html">Vanguardia</a>
-							<a href = "../classes/Infiltrator.html">Infiltrado</a>
-						</div>
-					</div>
-					<div class = "DropDown">
-						<button onclick = "CDisplay(1)" class = "DropButton">Bióticas
-							<i id = "CCD1" class = "fa fa-caret-down"></i>
-							<i id = "CCU1" class = "fa fa-caret-up"></i>
-						</button>
-						<div id = "CDDC1" class = "DDContent">
-							<a href = "../classes/Adept.html">Adepto</a>
-							<a href = "../classes/Vanguard.html">Vanguardia</a>
-							<a href = "../classes/Scentinel.html">Centinela</a>
-						</div>
-					</div>
-					<div class = "DropDown">
-						<button onclick = "CDisplay(2)" class = "DropButton">Tecnológicas
-							<i id = "CCD2" class = "fa fa-caret-down"></i>
-							<i id = "CCU2" class = "fa-caret-up"></i>
-						</button>
-						<div id = "CDDC2" class = "DDContent">
-							<a href = "../classes/Engeneer.html">Ingeniero</a>
-							<a href = "../classes/Scentinel.html">Centinela</a>
-							<a href = "../classes/Infiltrator.html">Infiltrado</a>
-						</div>
-					</div>
-					<div class = "DropDown">
-						<button onclick = "CDisplay(3)" class = "DropButton">Andrómeda
-							<i id = "CCD3" class = "fa fa-caret-down"></i>
-							<i id = "CCU3" class = "fa fa-caret-up"></i>
-						</button>
-						<div id = "CDDC3" class = "DDContent">
-							<a href = "../classes/Profiles.html">Perfiles</a>
-							<a href = "../classes/Habilities.html">Habilidades</a>
-						</div>
-					</div>
-				</div>
-			</div>
 		</nav>
-		<main class = "Species">
+		<section class = "Species">
 			<h2>Otras Especies Conocidas</h2>
 			<article class = "SArticle">
 				<a id = "Klixen"></a>
@@ -225,7 +173,7 @@
 				<a id = "Fauces"></a>
 				<iframe src = "http://masseffect.wikia.com/wiki/Thresher_Maw"></iframe>
 			</article>
-		</main>
+		</section>
 		<footer>
 			<h3>Autor:</h3>
 			<div class = "ATR">Víctor González del Hierro del Río</div>

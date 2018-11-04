@@ -20,6 +20,11 @@
 	background-color:#0B243B;
 }
 
+.NoOF
+{
+	overflow:hidden;
+}
+
 body
 {
 	background-color:#0A0A2A;
@@ -48,7 +53,7 @@ header .Header
 	width:70%;
 }
 
-date
+.Date
 {
 	background-color:#0A0A2A;
 	font-family:MEFont;
@@ -56,7 +61,7 @@ date
 	width:15%;
 }
 
-main
+section
 {	
 	overflow:auto;
 	overflow-x:hidden;
@@ -71,7 +76,7 @@ article
 	overflow-x:hidden;
 	font-family:MEFont;
 	text-align:justify;
-	height:545px;
+	height:585px;
 	color:#0080FF;
 	padding:20px;
 	width:96.5%
@@ -154,7 +159,7 @@ nav a
 	margin:0;
 }
 
-nav a:hover, .SNButton:hover, .SNContent a:hover, .DDContent a:hover, .DropDown .DropButton:hover, .SN:hover .SNButton
+nav a:hover, .SNButton:hover, .SNContent a:hover, .DDContent a:hover, .DropDown .DropButton:hover
 {
 	background-color:#0B2161;
 	color:#FFFFFF;
@@ -269,7 +274,7 @@ iframe
 	border-radius:5px;
 }
 
-main::-webkit-scrollbar-thumb
+section::-webkit-scrollbar-thumb
 {
 	background-color:#0000FF;
 }
