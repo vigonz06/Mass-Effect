@@ -20,6 +20,11 @@
 	background-color:#0B243B;
 }
 
+#Class
+{
+	padding-top:0;
+}
+
 body
 {
 	background-color:#0A0A2A;
@@ -126,13 +131,13 @@ h3
 	color:#0080FF;
 }
 
-a
+p a
 {
 	text-decoration:none;
 	color:#FFFFFF;
 }
 
-a:hover
+p a:hover
 {
 	color:#58FAF4
 }
@@ -188,6 +193,7 @@ nav a:hover, .SNButton:hover, .SNContent a:hover, .DDContent a:hover, .DropDown 
 {
 	background-color:#2E64FE;
 	position:absolute;
+	margin-right:0.4%;
 	margin-left:0.4%;
 	display:none;
 	width:99.2%;
