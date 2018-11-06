@@ -1,5 +1,5 @@
 var Ids = [
-[{ButtonId:"GDD", CaretUpId:"GCU", CaretDownId:"GCD"}, {ButtonId:"SDD", CaretUpId:"SCU", CaretDownId:"SCD"}, {ButtonId:"CDD", CaretUpId:"CCU", CaretDownId:"CCD"}, {ButtonId:"PDD", CaretUpId:"PCU", CaretDownId:"PCD"}],
+[{ButtonId:"GDD", CaretUpId:"GCU", CaretDownId:"GCD"}, {ButtonId:"SDD", CaretUpId:"SCU", CaretDownId:"SCD"}, {ButtonId:"CDD", CaretUpId:"CCU", CaretDownId:"CCD"}, {ButtonId:"PDD", CaretUpId:"PCU", CaretDownId:"PCD"}, {ButtonId:"LDD", CaretUpId:"LCU", CaretDownId:"LCD"}],
 [{ButtonId:"GDDC0", CaretUpId:"GCU0", CaretDownId:"GCD0"}, {ButtonId:"GDDC1", CaretUpId:"GCU1", CaretDownId:"GCD1"}, {ButtonId:"GDDC2", CaretUpId:"GCU2", CaretDownId:"GCD2"}, {ButtonId:"GDDC3", CaretUpId:"GCU3", CaretDownId:"GCD3"}],
 [{ButtonId:"SDDC0", CaretUpId:"SCU0", CaretDownId:"SCD0"}, {ButtonId:"SDDC1", CaretUpId:"SCU1", CaretDownId:"SCD1"}, {ButtonId:"SDDC2", CaretUpId:"SCU2", CaretDownId:"SCD2"}, {ButtonId:"SDDC3", CaretUpId:"SCU3", CaretDownId:"SCD3"}, {ButtonId:"SDDC4", CaretUpId:"SCU4", CaretDownId:"SCD4"}],
 [{ButtonId:"CDDC0", CaretUpId:"CCU0", CaretDownId:"CCD0"}, {ButtonId:"CDDC1", CaretUpId:"CCU1", CaretDownId:"CCD1"}, {ButtonId:"CDDC2", CaretUpId:"CCU2", CaretDownId:"CCD2"}],

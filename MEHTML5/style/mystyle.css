@@ -4,10 +4,10 @@
 	font-family:MEFont;
 }
 
-#Galaxy
+#Milky
 {
-	background-image:url(../img/MAP.jpg);
-	background-size:100% 115%;
+	background-image:url(../img/Milky.png);
+	background-size:100% 100%;
 }
 
 body
@@ -245,24 +245,6 @@ iframe
 	width:100%;
 	padding:0;
 	border:0;
-}
-
-.col
-{
-	margin-left:46px;
-	margin-top:17px;
-}
-
-.row a
-{
-	
-	padding: 34.5px 75.9px;
-	text-decoration: none;
-	display:inline-block;
-	font-family:MEFont;
-	margin:3px 2px;
-	font-size:12px;
-	opacity:0;
 }
 
 ::-webkit-scrollbar
