@@ -84,13 +84,6 @@ article
 	float:left;
 }
 
-footer
-{
-	font-family:MEFont;
-	padding:20px;
-	height:75px;
-}
-
 h2
 {
 	text-align:center;
@@ -238,7 +231,7 @@ object
 .Vid
 {
 	overflow:hidden;
-	height:585px;
+	height:710px;
 	width:100%;
 	padding:0;
 	margin:0;
