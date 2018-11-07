@@ -5,18 +5,19 @@
 		<meta name = "copyright" content = "VGH">
 		<meta name = "rating" content = "general">
 		<meta name = "date" content = "28/10/2018">  
-		<script src = "../script/script.js"></script>           
+		<script src = "../script/script.js"></script>        
 		<meta name = "distribution" content = "global">
 		<meta name = "generator" content = "Notepad++">
-		<title>Mass Effect 2 | Mass Effect Saga</title>
-		<meta name = "revisit-after" content = "30 days">
+		<meta name = "revisit-after" content = "30 days"> 
 		<meta name = "robots" content = "index , nofollow">
 		<meta name = "locality" content = "Madrid, España">
+		<title>Andromeda Locations | Mass Effect Saga</title> 
 		<meta name = "aplication-name" content = "Mass Effect Saga">
 		<link rel = "icon" href = "../icon/ME.ico" type = "image/x-icon">
 		<meta name = "description" content = "Mass Effect Saga Info Web">
 		<meta name = "author" content = "Victor González del Hierro del Rio"/>
 		<link rel = "stylesheet" type = "text/css" href = "../style/mystyle.css">
+		<link rel = "stylesheet" type = "text/css" href = "../style/AButtons.css">
 		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	</head>
 	<body>
@@ -29,7 +30,7 @@
 		<nav>
 			<a href = "../Index.html">Introduction</a>
 			<div class = "SN">
-				<button onclick = "Display(0, 0)" class = "SNButton active">Games
+				<button onclick = "Display(0,0)" class = "SNButton">Games
 					<i id = "GCD" class = "fa fa-caret-down"></i>
 					<i id = "GCU" class = "fa fa-caret-up"></i>
 				</button>
@@ -46,7 +47,7 @@
 						</div>
 					</div>
 					<div class = "DropDown">
-						<button onclick = "Display(1,1)" class = "DropButton active">Mass Effect 2
+						<button onclick = "Display(1,1)" class = "DropButton">Mass Effect 2
 							<i id = "GCD1" class = "fa fa-caret-down"></i>
 							<i id = "GCU1" class = "fa fa-caret-up"></i>
 						</button>
@@ -78,7 +79,7 @@
 				</div>
 			</div>
 			<div class = "SN">
-				<button onclick = "Display(0, 1)" class = "SNButton">Races
+				<button onclick = "Display(0,1)" class = "SNButton">Races
 					<i id = "SCD" class = "fa fa-caret-down"></i>
 					<i id = "SCU" class = "fa fa-caret-up"></i>
 				</button>
@@ -268,25 +269,41 @@
 				</div>
 			</div>
 			<div class = "SN">
-				<button onclick = "Display(0,4)" class = "SNButton">Locations
+				<button onclick = "Display(0,4)" class = "SNButton active">Locations
 					<i id = "LCD" class = "fa fa-caret-down"></i>
 					<i id = "LCU" class = "fa fa-caret-up"></i>
 				</button>
 				<div id = "LDD" class = "SNContent">
-					<a href = "../map/Locations.html" class = "active">Introduction</a>
+					<a href = "../map/Locations.html">Introduction</a>
 					<a href = "../map/Milky.html">Milky Way</a>
-					<a href = "../map/Heleus.html">Andromeda</a>
+					<a href = "../map/Heleus.html" class = "active">Andromeda</a>
 				</div>
 			</div>
 		</nav>
-		<main class = "Games">
-			<article>
-				<a id = "Des"></a>
-				<iframe src = "http://masseffect.wikia.com/wiki/Mass_Effect_2"></iframe>
+		<main class = "MM">
+			<article id = "AG" class = "Map">
+				<div class = "col">
+					<a id = "Saajor" href = "http://masseffect.wikia.com/wiki/Meridian" target = "HC">a</a>
+					<br>
+					<a id = "Nol" href = "http://masseffect.wikia.com/wiki/Voeld" target = "HC">a</a>
+					<a id = "Remav" href = "http://masseffect.wikia.com/wiki/H-047c" target = "HC">a</a>
+					<br>
+					<a id = "Govorkam" href = "http://masseffect.wikia.com/wiki/Kadara" target = "HC">a</a>
+					<br>
+					<a id = "Heleus" href = "http://masseffect.wikia.com/wiki/Heleus_Cluster" target = "HC">a</a>
+					<a id = "Onaon" href = "http://masseffect.wikia.com/wiki/Aya" target = "HC">a</a>
+					<br>
+					<a id = "Zaubray" href = "http://masseffect.wikia.com/wiki/Elaaden" target = "HC">a</a>
+					<a id = "Pytheas" href = "http://masseffect.wikia.com/wiki/Eos" target = "HC">a</a>
+					<a id = "Zheng" href = "http://masseffect.wikia.com/wiki/Nexus" target = "HC">a</a>
+					<br>
+					<a id = "Eriksson" href = "http://masseffect.wikia.com/wiki/Habitat_7" target = "HC">a</a>
+					<br>
+					<a id = "Faroang" href = "http://masseffect.wikia.com/wiki/Havarl" target = "HC">a</a>
+				</div>
 			</article>
-			<article class = "Vid">
-				<a id = "Vid"></a>
-				<object type = "application/x-shockwave-flash" data = "https://www.youtube.com/v/6yC-A2To-t8?version=3"></object>
+			<article class = "Map">
+				<iframe name = "HC" src = "http://masseffect.wikia.com/wiki/Heleus_Cluster"></iframe>
 			</article>
 		</main>
 	</body>

@@ -10,6 +10,12 @@
 	background-size:100% 100%;
 }
 
+#AG
+{
+	background-image:url(../img/Heleus.jpg);
+	background-size:100% 100%;
+}
+
 body
 {
 	background-color:#0A0A2A;
@@ -52,7 +58,7 @@ main
 	overflow-x:hidden;
 	margin-right:20%;
 	margin-left:20%;
-	height:585px;
+	height:710px;
 }
 
 article
@@ -61,7 +67,7 @@ article
 	font-family:MEFont;
 	text-align:justify;
 	color:#0080FF;
-	height:585px;
+	height:710px;
 	padding:0px;
 	width:100%
 }
