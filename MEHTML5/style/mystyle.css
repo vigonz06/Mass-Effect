@@ -64,9 +64,7 @@ main
 article
 {
 	overflow:hidden;
-	font-family:MEFont;
 	text-align:justify;
-	color:#0080FF;
 	height:710px;
 	padding:0px;
 	width:100%
@@ -84,35 +82,6 @@ article
 	float:left;
 }
 
-h2
-{
-	text-align:center;
-	font-size:25px;
-	color:#FFFFFF;
-}
-
-h3
-{
-	color:#FFFFFF;
-}
-
-.ATR
-{
-	margin-left:40px;
-	color:#0080FF;
-}
-
-p a
-{
-	text-decoration:none;
-	color:#FFFFFF;
-}
-
-p a:hover
-{
-	color:#58FAF4
-}
-
 .SN .fa-caret-up, .DropDown .fa-caret-up
 {
 	display:none;
@@ -121,6 +90,7 @@ p a:hover
 nav
 {
 	background-color:#0B0B61;
+	font-family:MEFont;
 	overflow: hidden;
 }
 
