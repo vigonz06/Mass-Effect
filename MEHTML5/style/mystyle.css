@@ -246,6 +246,14 @@ iframe
 	border:0;
 }
 
+.col a
+{
+	opacity:0;
+	cursor:initial;
+	display:inline-block;
+	border:1px solid red;
+}
+
 ::-webkit-scrollbar
 {
 	width:10px;
