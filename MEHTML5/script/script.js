@@ -61,3 +61,8 @@ window.onclick = function(event)
 		}
 	}
 }
+
+function FullScreen(i)
+{
+	document.getElementById(i).classList.toggle('show');
+}

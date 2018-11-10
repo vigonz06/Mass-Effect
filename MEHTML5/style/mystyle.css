@@ -180,28 +180,38 @@ nav a:hover, .SNButton:hover, .SNContent a:hover, .DDContent a:hover, .DropDown 
 	background-color:#0B2161;
 }
 
-object
-{
-	height:100%;
-	width:100%;
-}
-
-.Vid
-{
-	overflow:hidden;
-	height:710px;
-	width:100%;
-	padding:0;
-	margin:0;
-	border:0;
-}
-
 iframe
 {
 	height:100%;
 	width:100%;
 	padding:0;
 	border:0;
+}
+
+.Games .show
+{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	height:100%;
+	display:flex;
+	position:absolute;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+}
+
+article #Vid
+{
+	background-color:#000000;
+	padding:0px 1000px;
+	color:#FFFFFF;
+}
+
+.Video
+{
+	height:97%;
 }
 
 .col a
