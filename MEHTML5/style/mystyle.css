@@ -111,7 +111,8 @@ nav a
 	margin:0;
 }
 
-nav a:hover, .SNButton:hover, .SNContent a:hover, .DDContent a:hover, .DropDown .DropButton:hover, .SN:hover .SNButton, .DDContent:hover .SNButton
+nav a:hover, .SNButton:hover, .SNContent a:hover, .DDContent a:hover, 
+.DropButton:hover, .SN .clicked, .SNContent .clicked
 {
 	background-color:#00BFFF;
 	color:#FFFFFF;
@@ -205,13 +206,15 @@ iframe
 article #Vid
 {
 	background-color:#000000;
+	text-decoration:none;
+	border-color:#000000;
 	padding:0px 1000px;
 	color:#FFFFFF;
 }
 
 .Video
 {
-	height:97%;
+	height:97.5%;
 }
 
 .col a

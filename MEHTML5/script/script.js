@@ -1,43 +1,47 @@
 var Ids = [
-[{ButtonId:"GDD", CaretUpId:"GCU", CaretDownId:"GCD"}, {ButtonId:"SDD", CaretUpId:"SCU", CaretDownId:"SCD"}, {ButtonId:"CDD", CaretUpId:"CCU", CaretDownId:"CCD"}, {ButtonId:"PDD", CaretUpId:"PCU", CaretDownId:"PCD"}, {ButtonId:"LDD", CaretUpId:"LCU", CaretDownId:"LCD"}],
-[{ButtonId:"GDDC0", CaretUpId:"GCU0", CaretDownId:"GCD0"}, {ButtonId:"GDDC1", CaretUpId:"GCU1", CaretDownId:"GCD1"}, {ButtonId:"GDDC2", CaretUpId:"GCU2", CaretDownId:"GCD2"}, {ButtonId:"GDDC3", CaretUpId:"GCU3", CaretDownId:"GCD3"}],
-[{ButtonId:"SDDC0", CaretUpId:"SCU0", CaretDownId:"SCD0"}, {ButtonId:"SDDC1", CaretUpId:"SCU1", CaretDownId:"SCD1"}, {ButtonId:"SDDC2", CaretUpId:"SCU2", CaretDownId:"SCD2"}, {ButtonId:"SDDC3", CaretUpId:"SCU3", CaretDownId:"SCD3"}, {ButtonId:"SDDC4", CaretUpId:"SCU4", CaretDownId:"SCD4"}],
-[{ButtonId:"CDDC0", CaretUpId:"CCU0", CaretDownId:"CCD0"}, {ButtonId:"CDDC1", CaretUpId:"CCU1", CaretDownId:"CCD1"}, {ButtonId:"CDDC2", CaretUpId:"CCU2", CaretDownId:"CCD2"}],
-[{ButtonId:"PDDC0", CaretUpId:"PCU0", CaretDownId:"PCD0"}, {ButtonId:"PDDC1", CaretUpId:"PCU1", CaretDownId:"PCD1"}, {ButtonId:"PDDC2", CaretUpId:"PCU2", CaretDownId:"PCD2"}]
+[{ButtonId:"GDB", DropId:"GDD", CaretUpId:"GCU", CaretDownId:"GCD"}, {ButtonId:"SDB", DropId:"SDD", CaretUpId:"SCU", CaretDownId:"SCD"}, {ButtonId:"CDB", DropId:"CDD", CaretUpId:"CCU", CaretDownId:"CCD"}, {ButtonId:"PDB", DropId:"PDD", CaretUpId:"PCU", CaretDownId:"PCD"}, {ButtonId:"LDB", DropId:"LDD", CaretUpId:"LCU", CaretDownId:"LCD"}],
+[{ButtonId:"GDB0", DropId:"GDDC0", CaretUpId:"GCU0", CaretDownId:"GCD0"}, {ButtonId:"GDB1", DropId:"GDDC1", CaretUpId:"GCU1", CaretDownId:"GCD1"}, {ButtonId:"GDB2", DropId:"GDDC2", CaretUpId:"GCU2", CaretDownId:"GCD2"}, {ButtonId:"GDB3", DropId:"GDDC3", CaretUpId:"GCU3", CaretDownId:"GCD3"}],
+[{ButtonId:"SDB0", DropId:"SDDC0", CaretUpId:"SCU0", CaretDownId:"SCD0"}, {ButtonId:"SDB1", DropId:"SDDC1", CaretUpId:"SCU1", CaretDownId:"SCD1"}, {ButtonId:"SDB2", DropId:"SDDC2", CaretUpId:"SCU2", CaretDownId:"SCD2"}, {ButtonId:"SDB3", DropId:"SDDC3", CaretUpId:"SCU3", CaretDownId:"SCD3"}, {ButtonId:"SDB4", DropId:"SDDC4", CaretUpId:"SCU4", CaretDownId:"SCD4"}],
+[{ButtonId:"CDB0", DropId:"CDDC0", CaretUpId:"CCU0", CaretDownId:"CCD0"}, {ButtonId:"CDB1", DropId:"CDDC1", CaretUpId:"CCU1", CaretDownId:"CCD1"}, {ButtonId:"CDB2", DropId:"CDDC2", CaretUpId:"CCU2", CaretDownId:"CCD2"}],
+[{ButtonId:"PDB0", DropId:"PDDC0", CaretUpId:"PCU0", CaretDownId:"PCD0"}, {ButtonId:"PDB1", DropId:"PDDC1", CaretUpId:"PCU1", CaretDownId:"PCD1"}, {ButtonId:"PDB2", DropId:"PDDC2", CaretUpId:"PCU2", CaretDownId:"PCD2"}]
 ];
 
 function Display(i, j)
 {
-	var k;	
+	var k, l;
+
+	k = (i == 0) ? 0 : 1;
 	
-	document.getElementById(Ids[i][j].ButtonId).classList.toggle('show');
-	
-	if(document.getElementById(Ids[i][j].CaretDownId).style.display === 'none')
+	if(document.getElementById(Ids[i][j].DropId).classList.contains('show'))
 	{
 		document.getElementById(Ids[i][j].CaretDownId).style.display = 'inline-block';
 		document.getElementById(Ids[i][j].CaretUpId).style.display = 'none';
+		document.getElementById(Ids[i][j].DropId).classList.remove('show');
+		document.getElementById(Ids[i][j].ButtonId).className = 
+		document.getElementById(Ids[i][j].ButtonId).className.substr(0, 
+		document.getElementById(Ids[i][j].ButtonId).className.length - " clicked".length);
 	}
 	else
 	{
-		document.getElementById(Ids[i][j].CaretUpId).style.display = 'inline-block';
-		document.getElementById(Ids[i][j].CaretDownId).style.display = 'none';
-	}
-	
-	for(k in Ids[i])
-	{
-		if(!(k == j))
+		for(; k < Ids.length; k++)
 		{
-			if(document.getElementById(Ids[i][k].ButtonId).classList.contains('show'))
+			for(l in Ids[k])
 			{
-				document.getElementById(Ids[i][k].ButtonId).classList.remove('show');
-			}
-			
-			if(document.getElementById(Ids[i][k].CaretDownId).style.display === 'none')
-			{
-				document.getElementById(Ids[i][k].CaretDownId).style.display = 'inline-block';
-				document.getElementById(Ids[i][k].CaretUpId).style.display = 'none';
+				if(document.getElementById(Ids[k][l].DropId).classList.contains('show'))
+				{
+					document.getElementById(Ids[k][l].CaretDownId).style.display = 'inline-block';
+					document.getElementById(Ids[k][l].CaretUpId).style.display = 'none';
+					document.getElementById(Ids[k][l].DropId).classList.remove('show');
+					document.getElementById(Ids[k][l].ButtonId).className = 
+					document.getElementById(Ids[k][l].ButtonId).className.substr(0, 
+					document.getElementById(Ids[k][l].ButtonId).className.length - " clicked".length);
+				}
 			}
 		}
+		document.getElementById(Ids[i][j].CaretUpId).style.display = 'inline-block';
+		document.getElementById(Ids[i][j].CaretDownId).style.display = 'none';
+		document.getElementById(Ids[i][j].ButtonId).className += " clicked";
+		document.getElementById(Ids[i][j].DropId).classList.add('show');
 	}
 }
 
@@ -51,11 +55,14 @@ window.onclick = function(event)
 		{
 			for(j in Ids[i])
 			{
-				if(document.getElementById(Ids[i][j].ButtonId).classList.contains('show'))
+				if(document.getElementById(Ids[i][j].DropId).classList.contains('show'))
 				{
 					document.getElementById(Ids[i][j].CaretDownId).style.display = 'inline-block';
-					document.getElementById(Ids[i][j].ButtonId).classList.remove('show');
 					document.getElementById(Ids[i][j].CaretUpId).style.display = 'none';
+					document.getElementById(Ids[i][j].DropId).classList.remove('show');
+					document.getElementById(Ids[i][j].ButtonId).className = 
+					document.getElementById(Ids[i][j].ButtonId).className.substr(0, 
+					document.getElementById(Ids[i][j].ButtonId).className.length - " clicked".length);
 				}
 			}
 		}
