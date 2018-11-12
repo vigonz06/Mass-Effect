@@ -78,14 +78,12 @@ article
 nav
 {
 	background-color:#0B0B61;
-	font-family:MEFont;
 	overflow: hidden;
 }
 
 nav a
 {
 	text-decoration: none;
-	font-family:MEFont;
 	padding: 14px 16px;
 	text-align:center;
 	font-size:12px;
