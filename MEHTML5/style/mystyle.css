@@ -8,6 +8,7 @@ body
 {
 	background-color:#0A0A2A;
 	font-family:MEFont;
+	overflow:hidden;
 }
 
 header
@@ -18,7 +19,7 @@ header
 	width:100%;
 }
 
-header .Header
+.Header
 {
 	float:left;
 }
@@ -185,34 +186,6 @@ iframe
 	width:100%;
 	padding:0;
 	border:0;
-}
-
-.Games .show
-{
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	height:100%;
-	display:flex;
-	position:absolute;
-	align-items:center;
-	flex-direction:column;
-	justify-content:center;
-}
-
-article #Vid
-{
-	background-color:#000000;
-	text-decoration:none;
-	border-color:#000000;
-	padding:0px 1000px;
-	color:#FFFFFF;
-}
-
-.Video
-{
-	height:97.5%;
 }
 
 .col a
