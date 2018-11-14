@@ -7,11 +7,7 @@ var Ids = [
 ];
 
 function Display(i, j)
-{
-	var k, l;
-
-	k = (i == 0) ? 0 : 1;
-	
+{	
 	if(document.getElementById(Ids[i][j].DropId).classList.contains('show'))
 	{
 		document.getElementById(Ids[i][j].ButtonId).className = 
@@ -23,7 +19,9 @@ function Display(i, j)
 	}
 	else
 	{
-		for(; k < Ids.length; k++)
+		var k, l;
+		
+		for(k = (i == 0) ? 0 : 1; k < Ids.length; k++)
 		{
 			for(l in Ids[k])
 			{
@@ -46,11 +44,11 @@ function Display(i, j)
 }
 
 window.onclick = function(event)
-{
-	var i, j;
-	
+{	
 	if(!event.target.matches('.SNButton') && !event.target.matches('.DropButton'))
 	{
+		var i, j;
+	
 		for(i in Ids)
 		{
 			for(j in Ids[i])
