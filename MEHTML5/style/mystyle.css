@@ -41,10 +41,9 @@ time
 
 main
 {	
+	margin:0 20%;
 	height:710px;
 	overflow:auto;
-	margin-left:20%;
-	margin-right:20%;
 	overflow-x:hidden;
 	scroll-behavior:smooth;
 }
@@ -54,8 +53,8 @@ article
 	text-align:justify;
 	overflow:hidden;
 	height:710px;
-	padding:0px;
-	width:100%
+	width:100%;
+	padding:0;
 }
 
 .MM
@@ -126,8 +125,7 @@ nav a:hover, .SNButton:hover, .SNContent a:hover,
 {
 	background-color:#2E64FE;
 	position:absolute;
-	margin-right:0.4%;
-	margin-left:0.4%;
+	margin:0 0.4%;
 	display:none;
 	width:99.2%;
 	z-index:1;
