@@ -183,10 +183,20 @@ iframe
 	border:0;
 }
 
+.col
+{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+}
+
 .col a
 {
+	z-index:2;
 	opacity:0;
-	display:inline-block;
+	position:absolute;
 	border:1px solid red;
 }
 
