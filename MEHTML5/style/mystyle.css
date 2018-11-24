@@ -21,14 +21,13 @@ header
 
 .Header
 {
-	float:left;
+	float:right;
 }
 
 .BG
 {
 	background-image:url(../img/ME.png);
 	background-size:100% 100%;
-	margin-left:15%;
 	height:200px;
 	width:70%;
 }
