@@ -7,19 +7,19 @@
 *
 {
 	scroll-behavior:smooth;
+	font-family:MEFont;
+	font-size:12px;
+	color:#FFFFFF;
 }
 
 body
 {
 	background-color:#0A0A2A;
-	font-family:MEFont;
 	overflow:hidden;
 }
 
 header
 {
-	background-color:#0A0A2A;
-	color:#0080FF;
 	height:200px;
 	width:100%;
 }
@@ -40,6 +40,8 @@ header
 time
 {
 	text-align:right;
+	font-size:16px;
+	color:#0080FF;
 	width:15%;
 }
 
@@ -53,7 +55,6 @@ main
 
 article
 {
-	text-align:justify;
 	overflow:hidden;
 	height:710px;
 	width:100%;
@@ -67,8 +68,8 @@ article
 
 .Map
 {
-	padding:0;
 	width:50%;
+	padding:0;
 	float:left;
 }
 
@@ -85,16 +86,14 @@ article
 nav
 {
 	background-color:#0B0B61;
-	overflow: hidden;
+	overflow:hidden;
 }
 
 nav a
 {
-	text-decoration: none;
-	padding: 14px 16px;
+	text-decoration:none;
+	padding:14px 16px;
 	text-align:center;
-	font-size:12px;
-	color:#FFFFFF;
 	float:left;
 	z-index:3;
 }
@@ -110,10 +109,8 @@ nav a
 {
 	background-color:inherit;
 	font-family:inherit;
-	padding: 14px 16px;
-	font-size:12px;
+	padding:14px 16px;
 	cursor:pointer;
-	color:#FFFFFF;
 	outline:none;
 	border:none;
 	z-index:3;
@@ -135,10 +132,13 @@ nav a:hover, .SNButton:hover, .SNContent a:hover,
 .SNContent
 {
 	background-color:#2E64FE;
+	box-sizing:border-box;
+	border-color:#0A0A2A;
+	border-width:0 8px;
+	border-style:solid;
 	position:absolute;
-	margin:0 0.4%;
 	display:none;
-	width:99.2%;
+	width:100%;
 	z-index:3;
 	left:0;
 }
@@ -163,7 +163,6 @@ nav a:hover, .SNButton:hover, .SNContent a:hover,
 	text-decoration:none;
 	text-align:justify;
 	padding:12px 16px;
-	font-size:12px;
 	display:block;
 	float:none;
 }
@@ -173,9 +172,7 @@ nav a:hover, .SNButton:hover, .SNContent a:hover,
 	background-color:inherit;
 	font-family:inherit;
 	padding:14px 16px;
-	font-size:12px;
 	cursor:pointer; 
-	color:#FFFFFF;
 	outline:none;
 	border:none;
 	margin:0;
@@ -196,19 +193,91 @@ iframe
 
 .col
 {
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
 	position:absolute;
+	bottom:0;
+	right:0;
+	left:0;
+	top:0;
 }
 
 .col a
 {
+	border:1px solid red;
+	position:absolute;
 	z-index:2;
 	opacity:0;
-	position:absolute;
-	border:1px solid red;
+}
+
+.DDContent .Class
+{
+	padding-left:45px;
+}
+
+.DDContent .Soldier
+{
+	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/8/80/Soldier-icon.png/revision/latest?cb=20170410084910");
+	background-repeat:no-repeat;
+	background-size:25%100%;
+}
+
+.DDContent .Adept
+{
+	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/d/de/Adept-icon.png/revision/latest?cb=20170410085029");
+	background-repeat:no-repeat;
+	background-size:25%100%;
+}
+
+.DDContent .Engineer
+{
+	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/b/bd/Engineer-icon.png/revision/latest?cb=20170410084925");
+	background-repeat:no-repeat;
+	background-size:25%100%;
+}
+
+.DDContent .Vanguard
+{
+	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/9/9a/Vanguard-icon.png/revision/latest?cb=20170410085041");
+	background-repeat:no-repeat;
+	background-size:25%100%;
+}
+
+.DDContent .Sentinel
+{
+	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/1/19/Sentinel-icon.png/revision/latest?cb=20180308181131");
+	background-repeat:no-repeat;
+	background-size:25%100%;
+}
+
+.DDContent .Infiltrator
+{
+	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/8/8f/Infiltrator-icon.png/revision/latest?cb=20170410085051");
+	background-repeat:no-repeat;
+	background-size:25%100%;
+}
+
+.DDContent .fa
+{
+	padding-right:5px;
+}
+
+.DDContent .fa-caret-down
+{
+	font-size:18px;
+}
+
+.DDContent .red
+{
+	color:#FF0000;
+}
+
+.DDContent .blue
+{
+	color:#2E2EFE;
+}
+
+.DDContent .orange
+{
+	color:#DBA901;
 }
 
 ::-webkit-scrollbar
