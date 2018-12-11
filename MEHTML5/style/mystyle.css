@@ -56,18 +56,16 @@ time
 
 main
 {	
-	width:100%;
-	padding:0 20%;
+	margin:0 20%;
 	overflow:auto;
-	box-sizing:border-box;
+	overflow-x:hidden;
 	height:var(--main-height);
-	background-color:var(--main-bg-color);
 }
 
 article
 {
 	height:var(--main-height);
-	min-width:100%;
+	overflow:hidden;
 	width:100%;
 	padding:0;
 }
@@ -94,13 +92,13 @@ article
 	display:none;
 }
 
-.NB
+nav
 {
 	background-color:#0B0B61;
 	overflow:hidden;
 }
 
-.NB a
+nav a
 {
 	text-decoration:none;
 	padding:14px 16px;
@@ -133,7 +131,7 @@ article
 	background-color:var(--color-blue);
 }
 
-.NB a:hover, .SNButton:hover, .SNContent a:hover, 
+nav a:hover, .SNButton:hover, .SNContent a:hover, 
 .DDContent a:hover, .DropButton:hover, .SN .clicked, 
 .SNContent .clicked, ::-webkit-scrollbar-thumb:hover
 {
@@ -145,7 +143,7 @@ article
 	border-color:var(--main-bg-color);
 	background-color:#2E64FE;
 	box-sizing:border-box;
-	border-width:0 7.5px;
+	border-width:0 8px;
 	border-style:solid;
 	position:absolute;
 	display:none;
