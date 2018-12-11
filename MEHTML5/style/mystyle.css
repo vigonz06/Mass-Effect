@@ -4,6 +4,50 @@
 	font-family:MEFont;
 }
 
+/*@media only screen and (max-width: 600px) 
+{	
+	*
+	{
+		font-size:8px;
+	}
+	
+	main
+	{
+		left:0;
+		width:75%;
+		float:left;
+	}
+	
+	.BG
+	{
+		width:100%;
+	}
+	
+	time
+	{
+		display:none;
+	}
+	
+	nav
+	{
+		max-width:25%;
+		height:710px;
+		float:left;
+	}
+	
+	nav a, nav .SN
+	{
+		display:block;
+	}
+	
+	nav .SN
+	{
+		min-width:160px;
+		max-width:25%;
+		left:25%;
+	}
+}*/
+
 :root
 {
 	--main-bg-color:#0A0A2A;
@@ -35,29 +79,34 @@ header
 
 .Header
 {
-	float:right;
+	float:left;
 }
 
 .BG
 {
 	background-image:url(../img/ME.png);
 	background-size:100%100%;
+	position:relative;
 	height:200px;
 	width:70%;
 }
 
 time
 {
+	position:relative;
 	text-align:right;
 	font-size:16px;
 	color:#0080FF;
 	width:15%;
+	left:85%;
 }
 
 main
 {	
-	margin:0 20%;
+	left:20%;
+	width:60%;
 	overflow:auto;
+	position:relative;
 	overflow-x:hidden;
 	height:var(--main-height);
 }
