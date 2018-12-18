@@ -61,6 +61,7 @@
 {
 	scroll-behavior:smooth;
 	font-family:MEFont;
+	transition:1s;
 	font-size:12px;
 	color:#FFFFFF;
 }
@@ -121,7 +122,8 @@ article
 
 .MM
 {
-	margin:0;
+	width:100%;
+	left:0;
 }
 
 .Map
@@ -213,7 +215,6 @@ nav a:hover, .SNButton:hover, .SNContent a:hover,
 	position:absolute;
 	min-width:160px;
 	display:none;
-	z-index:3;
 }
 
 .DDContent a 
@@ -351,11 +352,16 @@ iframe
 ::-webkit-scrollbar-thumb
 {
 	background-color:var(--color-blue);
-	border-radius:5px;
+	border-radius:40%;
 }
 
 ::-webkit-scrollbar-button
 {
 	background-color:#2E2E2E;
-	border-radius:5px;
+	border-radius:50%;
+}
+
+::-webkit-scrollbar-button:hover
+{
+	background-color:#202020;
 }
