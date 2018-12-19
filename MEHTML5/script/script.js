@@ -10,11 +10,9 @@ function Display(i, j)
 {	
 	if(document.getElementById(Ids[i][j].DropId).classList.contains('show'))
 	{
-		document.getElementById(Ids[i][j].ButtonId).className = 
-		document.getElementById(Ids[i][j].ButtonId).className.substr(0, 
-		document.getElementById(Ids[i][j].ButtonId).className.length - 8);
 		document.getElementById(Ids[i][j].DropId).classList.remove('show');
 		document.getElementById(Ids[i][j].CaretUpId).style.display = 'none';
+		document.getElementById(Ids[i][j].ButtonId).classList.remove('clicked');
 		document.getElementById(Ids[i][j].CaretDownId).style.display = 'inline-block';
 	}
 	else
@@ -27,17 +25,15 @@ function Display(i, j)
 			{
 				if(document.getElementById(Ids[k][l].DropId).classList.contains('show'))
 				{
-					document.getElementById(Ids[k][l].ButtonId).className = 
-					document.getElementById(Ids[k][l].ButtonId).className.substr(0, 
-					document.getElementById(Ids[k][l].ButtonId).className.length - 8);
 					document.getElementById(Ids[k][l].DropId).classList.remove('show');
 					document.getElementById(Ids[k][l].CaretUpId).style.display = 'none';
+					document.getElementById(Ids[k][l].ButtonId).classList.remove('clicked');
 					document.getElementById(Ids[k][l].CaretDownId).style.display = 'inline-block';
 				}
 			}
 		}
 		document.getElementById(Ids[i][j].DropId).classList.add('show');
-		document.getElementById(Ids[i][j].ButtonId).className += " clicked";
+		document.getElementById(Ids[i][j].ButtonId).classList.add('clicked');
 		document.getElementById(Ids[i][j].CaretDownId).style.display = 'none';
 		document.getElementById(Ids[i][j].CaretUpId).style.display = 'inline-block';
 	}
@@ -55,11 +51,9 @@ window.onclick = function(event)
 			{
 				if(document.getElementById(Ids[i][j].DropId).classList.contains('show'))
 				{
-					document.getElementById(Ids[i][j].ButtonId).className = 
-					document.getElementById(Ids[i][j].ButtonId).className.substr(0, 
-					document.getElementById(Ids[i][j].ButtonId).className.length - 8);
 					document.getElementById(Ids[i][j].DropId).classList.remove('show');
 					document.getElementById(Ids[i][j].CaretUpId).style.display = 'none';
+					document.getElementById(Ids[i][j].ButtonId).classList.remove('clicked');
 					document.getElementById(Ids[i][j].CaretDownId).style.display = 'inline-block';
 				}
 			}
