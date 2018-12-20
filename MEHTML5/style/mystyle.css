@@ -245,9 +245,19 @@ nav a:hover, .SNButton:hover, .SNContent a:hover,
 	z-index:3;
 }
 
-[class*="DDContent show"] a
+[class="DDContent show"] a
 {
 	display:block;
+}
+
+[class*="clicked"] .fa-caret-down
+{
+	display:none;
+}
+
+[class*="clicked"] .fa-caret-up
+{
+	display:inline-block;
 }
 
 iframe
