@@ -52,6 +52,7 @@
 {
 	--main-bg-color:#0A0A2A;
 	--color-orange:#DBA901;
+	--color-white:#FFFFFF;
 	--color-blue:#2E2EFE;
 	--main-height:710px;
 	--color-red:#FF0000;
@@ -59,11 +60,11 @@
 
 *
 {
+	color:var(--color-white);
 	scroll-behavior:smooth;
 	font-family:MEFont;
 	transition:1s;
 	font-size:12px;
-	color:#FFFFFF;
 }
 
 body
@@ -182,9 +183,8 @@ nav a
 	background-color:var(--color-blue);
 }
 
-nav a:hover, .SNButton:hover, .SNContent a:hover, 
-.DDContent a:hover, .DropButton:hover, .SN .clicked, 
-.SNContent .clicked, ::-webkit-scrollbar-thumb:hover
+nav a:hover, .SNButton:hover, .SNContent a:hover, .DDContent a:hover, 
+.DropButton:hover, .SN .clicked, ::-webkit-scrollbar-thumb:hover
 {
 	background-color:#00BFFF;
 }
@@ -250,12 +250,12 @@ nav a:hover, .SNButton:hover, .SNContent a:hover,
 	display:block;
 }
 
-[class*="clicked"] .fa-caret-down
+.clicked .fa-caret-down
 {
 	display:none;
 }
 
-[class*="clicked"] .fa-caret-up
+.clicked .fa-caret-up
 {
 	display:inline-block;
 }
