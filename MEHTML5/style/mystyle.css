@@ -58,6 +58,92 @@
 	--color-red:#FF0000;
 }
 
+*
+{
+	color:var(--color-white);
+	scroll-behavior:smooth;
+	font-family:MEFont;
+	transition:1s;
+}
+
+body
+{
+	background-color:var(--main-bg-color);
+	overflow:hidden;
+}
+
+header
+{
+	height:200px;
+	width:100%;
+}
+
+.BG
+{
+	background-image:url(../img/ME.png);
+	background-size:100%100%;
+	position:absolute;
+	height:210px;
+	width:70%;
+	left:15%;
+	top:0;
+}
+
+time
+{
+	position:absolute;
+	text-align:right;
+	font-size:16px;
+	color:#0080FF;
+	right:0.5%;
+}
+
+main
+{	
+	height:var(--main-height);
+	position:relative;
+	overflow:auto;
+	width:60%;
+	left:20%;
+}
+
+article
+{
+	height:var(--main-height);
+	overflow:hidden;
+	width:100%;
+	padding:0;
+}
+
+.MM
+{
+	width:100%;
+	left:0;
+}
+
+.Map
+{
+	width:50%;
+	padding:0;
+	float:left;
+}
+
+.OF
+{
+	overflow:auto;
+}
+
+.SN .fa-caret-up, .DropDown .fa-caret-up
+{
+	display:none;
+}
+
+nav
+{
+	background-color:#0B0B61;
+	overflow:hidden;
+}
+
 .DDContent .Soldier
 {
 	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/8/80/Soldier-icon.png/revision/latest?cb=20170410084910");
@@ -157,89 +243,7 @@
 {
 	*
 	{
-		color:var(--color-white);
-		scroll-behavior:smooth;
-		font-family:MEFont;
 		font-size:12px;
-		transition:1s;
-	}
-
-	body
-	{
-		background-color:var(--main-bg-color);
-		overflow:hidden;
-	}
-
-	header
-	{
-		height:200px;
-		width:100%;
-	}
-
-	.BG
-	{
-		background-image:url(../img/ME.png);
-		background-size:100%100%;
-		position:absolute;
-		height:210px;
-		width:70%;
-		left:15%;
-		top:0;
-	}
-
-	time
-	{
-		position:absolute;
-		text-align:right;
-		font-size:16px;
-		color:#0080FF;
-		right:0.5%;
-	}
-
-	main
-	{	
-		height:var(--main-height);
-		position:relative;
-		overflow:auto;
-		width:60%;
-		left:20%;
-	}
-
-	article
-	{
-		height:var(--main-height);
-		overflow:hidden;
-		width:100%;
-		padding:0;
-	}
-
-	.MM
-	{
-		width:100%;
-		left:0;
-	}
-
-	.Map
-	{
-		width:50%;
-		padding:0;
-		float:left;
-	}
-
-	.OF
-	{
-		overflow:auto;
-	}
-
-	.SN .fa-caret-up, .DropDown .fa-caret-up
-	{
-		display:none;
-	}
-
-	nav
-	{
-		background-color:#0B0B61;
-		overflow:hidden;
 	}
 
 	nav a
@@ -390,5 +394,23 @@
 	.DDContent .fa-caret-down
 	{
 		font-size:18px;
+	}
+	
+	.Phone
+	{
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	.Phone
+	{
+		display:block;
+	}
+	
+	.DropDown
+	{
+		display:none;
 	}
 }
