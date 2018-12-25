@@ -34,45 +34,36 @@ var Ids =
 
 function Display(i, j)
 {	
-	if(document.getElementById(Ids[i][j].DropId).classList.contains('show'))
-	{
-		document.getElementById(Ids[i][j].DropId).classList.remove('show');
-		document.getElementById(Ids[i][j].ButtonId).classList.remove('clicked');
-	}
-	else
-	{
-		var k, l;
-		
-		for(k = (i == 0) ? 0 : 1; k < Ids.length; k++)
+	if(!document.getElementById(Ids[i][j].DropId).classList.contains('show'))
+	{		
+		for(var k = (i == 0) ? 0 : 1; k < Ids.length; k++)
 		{
-			for(l in Ids[k])
+			for(var l in Ids[k])
 			{
 				if(document.getElementById(Ids[k][l].DropId).classList.contains('show'))
 				{
-					document.getElementById(Ids[k][l].DropId).classList.remove('show');
-					document.getElementById(Ids[k][l].ButtonId).classList.remove('clicked');
+					document.getElementById(Ids[k][l].DropId).classList.toggle('show');
+					document.getElementById(Ids[k][l].ButtonId).classList.toggle('clicked');
 				}
 			}
 		}
-		document.getElementById(Ids[i][j].DropId).classList.add('show');
-		document.getElementById(Ids[i][j].ButtonId).classList.add('clicked');
 	}
+	document.getElementById(Ids[i][j].DropId).classList.toggle('show');
+	document.getElementById(Ids[i][j].ButtonId).classList.toggle('clicked');
 }
 
 window.onclick = function(event)
 {	
 	if(!event.target.matches('.SNButton') && !event.target.matches('.DropButton'))
-	{
-		var i, j;
-	
-		for(i in Ids)
+	{	
+		for(var i in Ids)
 		{
-			for(j in Ids[i])
+			for(var j in Ids[i])
 			{
 				if(document.getElementById(Ids[i][j].DropId).classList.contains('show'))
 				{
-					document.getElementById(Ids[i][j].DropId).classList.remove('show');
-					document.getElementById(Ids[i][j].ButtonId).classList.remove('clicked');
+					document.getElementById(Ids[i][j].DropId).classList.toggle('show');
+					document.getElementById(Ids[i][j].ButtonId).classList.toggle('clicked');
 				}
 			}
 		}
