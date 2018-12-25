@@ -365,13 +365,24 @@ iframe
 ::-webkit-scrollbar-thumb
 {
 	background-color:var(--color-blue);
-	border-radius:40%;
+	border-radius:50%;
 }
 
 ::-webkit-scrollbar-button
 {
 	background-color:#2E2E2E;
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track-piece
+{
+	background-color:#2E2E2E;
 	border-radius:50%;
+}
+
+::-webkit-scrollbar-track-piece
+{
+	background-color:#1C1C1C;
 }
 
 ::-webkit-scrollbar-button:hover
