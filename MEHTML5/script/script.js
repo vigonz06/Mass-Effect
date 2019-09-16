@@ -29,8 +29,8 @@ var Ids=
 function Display(i, j)
 {	
 	if(!document.getElementById(Ids[i][j].DropId).classList.contains('show'))
-	{		
-		for(var k=(i==0)?0:1;k<Ids.length;k++)
+	{
+		for(var k = (i == 0) ? 0 : 1; k < Ids.length; k++)
 		{
 			for(var l in Ids[k])
 			{
