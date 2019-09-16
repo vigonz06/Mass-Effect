@@ -6,7 +6,8 @@
 
 :root
 {
-	--main-bg-color:#0A0A2A;
+	--main-bg-color1:#0A0A2A;
+	--main-bg-color2:#000000;
 	--color-orange:#DBA901;
 	--color-white:#FFFFFF;
 	--color-blue:#2E2EFE;
@@ -25,7 +26,7 @@
 
 body
 {
-	background-color:var(--main-bg-color);
+	background-image:linear-gradient(#0A0A2A,#000000);
 	overflow:hidden;
 }
 
@@ -123,7 +124,7 @@ nav a:hover, .SNButton:hover, .SNContent a:hover, .DDContent a:hover,
 
 .clicked .fa-caret-up
 {
-	display:inline-block;
+	display:inline;
 }
 
 iframe
@@ -134,59 +135,59 @@ iframe
 	border:0;
 }
 
-.DDContent .Soldier
+.Soldier
 {
 	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/8/80/Soldier-icon.png/revision/latest?cb=20170410084910");
 	background-repeat:no-repeat;
 	background-size:25%100%;
 }
 
-.DDContent .Adept
+.Adept
 {
 	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/d/de/Adept-icon.png/revision/latest?cb=20170410085029");
 	background-repeat:no-repeat;
 	background-size:25%100%;
 }
 
-.DDContent .Engineer
+.Engineer
 {
 	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/b/bd/Engineer-icon.png/revision/latest?cb=20170410084925");
 	background-repeat:no-repeat;
 	background-size:25%100%;
 }
 
-.DDContent .Vanguard
+.Vanguard
 {
 	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/9/9a/Vanguard-icon.png/revision/latest?cb=20170410085041");
 	background-repeat:no-repeat;
 	background-size:25%100%;
 }
 
-.DDContent .Sentinel
+.Sentinel
 {
 	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/1/19/Sentinel-icon.png/revision/latest?cb=20180308181131");
 	background-repeat:no-repeat;
 	background-size:25%100%;
 }
 
-.DDContent .Infiltrator
+.Infiltrator
 {
 	background-image:url("https://vignette.wikia.nocookie.net/masseffect/images/8/8f/Infiltrator-icon.png/revision/latest?cb=20170410085051");
 	background-repeat:no-repeat;
 	background-size:25%100%;
 }
 
-.DDContent .red
+.red
 {
 	color:var(--color-red);
 }
 
-.DDContent .blue
+.blue
 {
 	color:var(--color-blue);
 }
 
-.DDContent .orange
+.orange
 {
 	color:var(--color-orange);
 }
@@ -283,13 +284,12 @@ iframe
 
 	.SNContent
 	{
-		border-color:var(--main-bg-color);
+		border-color:var(--main-bg-color1);
 		background-color:#2E64FE;
 		box-sizing:border-box;
 		border-width:0 8px;
 		border-style:solid;
 		position:absolute;
-		display:block;
 		width:100%;
 		z-index:-1;
 		opacity:0;
@@ -307,7 +307,6 @@ iframe
 		background-color:#151515;
 		position:absolute;
 		min-width:160px;
-		display:block;
 		opacity:0;
 	}
 
@@ -434,14 +433,14 @@ iframe
 	
 	.SNContent
 	{
-		border-color:var(--main-bg-color);
+		border-color:var(--main-bg-color1);
 		background-color:#2E64FE;
 		box-sizing:border-box;
 		border-width:0 8px;
 		border-style:solid;
 		position:absolute;
-		width:100%;
 		display:none;
+		width:100%;
 		z-index:3;
 		left:0;
 	}
