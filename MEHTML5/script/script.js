@@ -36,8 +36,8 @@ function Display(i, j)
 			{
 				if(document.getElementById(Ids[k][l].DropId).classList.contains('show'))
 				{
-					document.getElementById(Ids[k][l].DropId).classList.remove('show');
-					document.getElementById(Ids[k][l].ButtonId).classList.remove('clicked');
+					document.getElementById(Ids[k][l].DropId).classList.toggle('show');
+					document.getElementById(Ids[k][l].ButtonId).classList.toggle('clicked');
 				}
 			}
 		}
@@ -56,8 +56,8 @@ window.onclick=function(event)
 			{
 				if(document.getElementById(Ids[i][j].DropId).classList.contains('show'))
 				{
-					document.getElementById(Ids[i][j].DropId).classList.remove('show');
-					document.getElementById(Ids[i][j].ButtonId).classList.remove('clicked');
+					document.getElementById(Ids[i][j].DropId).classList.toggle('show');
+					document.getElementById(Ids[i][j].ButtonId).classList.toggle('clicked');
 				}
 			}
 		}
