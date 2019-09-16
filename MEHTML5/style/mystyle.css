@@ -211,12 +211,6 @@ iframe
 ::-webkit-scrollbar-button
 {
 	background-color:#2E2E2E;
-}
-
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-track-piece
-{
-	background-color:#2E2E2E;
 	border-radius:50%;
 }
 
