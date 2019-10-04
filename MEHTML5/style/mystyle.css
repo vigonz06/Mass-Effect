@@ -247,9 +247,9 @@ iframe
 	{	
 		height:var(--main-height);
 		position:relative;
+		max-width:1200px;
 		overflow:auto;
-		width:60%;
-		left:20%;
+		margin:auto;
 	}
 
 	article
